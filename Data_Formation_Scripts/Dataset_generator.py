@@ -156,6 +156,10 @@ full_data['age'] = full_data['season'] - pd.to_datetime(players.set_index('playe
 full_data['is_tier1_nation'] = full_data['country_of_citizenship'].apply(lambda x: 1 if x in tier_1_nations else 0)
 full_data['is_left_footed'] = full_data['foot'].apply(lambda x: 1 if x == 'left' else 0)
 
+# Fix missing heights 
+avg_height = full_data['height_in_cm'].median()
+full_data['height_in_cm'] = full_data['height_in_cm'].fillna(avg_height)
+
 # Goals Conceded Per 90 Minutes
 full_data['goals_conceded_per_90_season1'] = np.where(full_data['minutes_played_season1'] > 0, 
                                      (full_data['goals_conceded_season1'] / full_data['minutes_played_season1']) * 90, 0)
