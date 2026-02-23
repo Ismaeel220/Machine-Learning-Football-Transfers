@@ -155,6 +155,9 @@ full_data['days_left_on_contract'] = full_data['days_left_on_contract'].apply(la
 full_data['age'] = full_data['season'] - pd.to_datetime(players.set_index('player_id').loc[full_data['player_id']]['date_of_birth'].values).year
 full_data['is_tier1_nation'] = full_data['country_of_citizenship'].apply(lambda x: 1 if x in tier_1_nations else 0)
 full_data['is_left_footed'] = full_data['foot'].apply(lambda x: 1 if x == 'left' else 0)
+# Fix missing heights
+avg_height = full_data['height_in_cm'].median()
+full_data['height_in_cm'] = full_data['height_in_cm'].fillna(avg_height)
 
 # Fix missing heights 
 avg_height = full_data['height_in_cm'].median()
