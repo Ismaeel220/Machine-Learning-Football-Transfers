@@ -189,10 +189,18 @@ final_cols = [
     'season', 'to_club_name'
 ]
 
-# SAVE
-full_data[full_data['season'].isin(training_seasons)][final_cols].to_csv('training_data.csv', index=False)
-full_data[full_data['season'].isin(testing_seasons)][final_cols].to_csv('testing_data.csv', index=False)
+# save as a dataframe 
+train_df = full_data[full_data['season'].isin(training_seasons)][final_cols]
+test_df = full_data[full_data['season'].isin(testing_seasons)][final_cols]
+# Save as CSV
+train_df.to_csv('training_data.csv', index=False)
+test_df.to_csv('testing_data.csv', index=False)
 
 print("\n Datasets compiled.")
-print(f"Training Data: {len(full_data[full_data['season'].isin(training_seasons)])} rows.")
-print(f"Testing Data: {len(full_data[full_data['season'].isin(testing_seasons)])} rows.")
+print("\n training data counts ")
+print(train_df['position'].value_counts())
+print(f"Total Players: {len(train_df)}")
+
+print("\ntesting data counts")
+print(test_df['position'].value_counts())
+print(f"Total Players: {len(test_df)}")
