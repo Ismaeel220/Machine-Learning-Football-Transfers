@@ -9,15 +9,18 @@ train_df = pd.read_csv('training_data.csv')
 # Load testing data
 test_df = pd.read_csv('testing_data.csv')
 
+#store number of training rows
+num_train_rows = len(train_df)
+
 # Combine datasets so can apply one hot encoding to the position column since machines cannot read numbers
 combined = pd.concat([train_df, test_df])
 
 # Apply one hot encoding to the positions column
 combined = pd.get_dummies(combined, columns=['position'], drop_first=True)
 
-# Split them back apart using the 'season' column
-train_df = combined[combined['season'].isin([2021, 2022])]
-test_df = combined[combined['season'] == 2023]
+# Split data back into training and testing based on the original length of the training data 
+train_df = combined.iloc[:num_train_rows] 
+test_df = combined.iloc[num_train_rows:]  
 
 
 # Drop columns which are irrevant and the algorithm should not learn from
@@ -58,4 +61,3 @@ feature_cost = feature_cost.sort_values(by='Euro Value Added', ascending=False)
 print("\n--- HOW THE MODEL PRICED THE STATS ---")
 # Format the numbers to look like currency
 feature_cost['Euro Value Added'] = feature_cost['Euro Value Added'].apply(lambda x: f"€{x:,.0f}")
-print(feature_cost.to_string(index=False))
