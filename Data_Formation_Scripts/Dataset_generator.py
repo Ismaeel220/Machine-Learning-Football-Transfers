@@ -3,8 +3,8 @@ import numpy as np
 from datetime import datetime
 
 # define variables for seasons used for training and testing 
-training_seasons = [2021, 2022] 
-testing_seasons = [2023]
+training_seasons = [2020,2021,2022,2023] 
+testing_seasons = [2024]
 all_seasons = training_seasons + testing_seasons
 
 target_leagues = ['GB1', 'IT1', 'ES1', 'L1'] 
@@ -56,7 +56,7 @@ elif 'Season' in transfers.columns:
 elif 'year' in transfers.columns:
     transfers['season'] = transfers['year']
 
-# Converts the text "21/22" into the number 2021 so our math (season - 1) works!
+# Converts the text "21/22" into the number 2021 
 transfers['season'] = transfers['season'].astype(str).str.split('/').str[0].astype(int) + 2000   
 
 def get_season_stats(player_ids, season_year):
@@ -193,5 +193,6 @@ final_cols = [
 full_data[full_data['season'].isin(training_seasons)][final_cols].to_csv('training_data.csv', index=False)
 full_data[full_data['season'].isin(testing_seasons)][final_cols].to_csv('testing_data.csv', index=False)
 
-print("\nSUCCESS! Dataset compiled.")
+print("\n Datasets compiled.")
 print(f"Training Data: {len(full_data[full_data['season'].isin(training_seasons)])} rows.")
+print(f"Testing Data: {len(full_data[full_data['season'].isin(testing_seasons)])} rows.")
