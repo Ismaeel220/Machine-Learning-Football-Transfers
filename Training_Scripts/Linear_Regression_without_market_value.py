@@ -58,6 +58,7 @@ feature_cost = pd.DataFrame({
 # Sort how much the model thinks each feature contributes to price from high to low
 feature_cost = feature_cost.sort_values(by='Euro Value Added', ascending=False)
 
-print("\n--- HOW THE MODEL PRICED THE STATS ---")
+print("How much the model determines each feature to add in relation to transfer value ")
 # Format the numbers to look like currency
 feature_cost['Euro Value Added'] = feature_cost['Euro Value Added'].apply(lambda x: f"€{x:,.0f}")
+print(feature_cost.to_string(index=False))
