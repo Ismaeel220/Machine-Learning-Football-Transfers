@@ -1,9 +1,12 @@
 import pandas as pd
 import numpy as np
+import os
 from datetime import datetime
 
-# define variables for seasons used for training and testing 
-training_seasons = [2020,2021,2022,2023] 
+# =========================================================
+# --- 1. CONFIG VARIABLES ---
+# =========================================================
+training_seasons = [2020, 2021, 2022, 2023] 
 testing_seasons = [2024]
 all_seasons = training_seasons + testing_seasons
 
@@ -37,42 +40,19 @@ tier_1_nations= [
     'Germany', 'Croatia', 'Senegal', 'Italy'
 ]
 
-# load data 
-print("Loading Raw Data...")
-try:
-    transfers = pd.read_csv('./Raw_data/transfers.csv')
-    appearances = pd.read_csv('./Raw_data/appearances.csv')
-    games = pd.read_csv('./Raw_data/games.csv')
-    players = pd.read_csv('./Raw_data/players.csv')
-    clubs = pd.read_csv('./Raw_data/clubs.csv')
-    valuations = pd.read_csv('./Raw_data/player_valuations.csv')
-except FileNotFoundError as e:
-    print(f"Error: Missing file {e.filename}. Make sure all CSVs are in the same folder as this script.")
-    exit()
-if 'transfer_season' in transfers.columns:
-    transfers['season'] = transfers['transfer_season']
-elif 'Season' in transfers.columns:
-    transfers['season'] = transfers['Season']
-elif 'year' in transfers.columns:
-    transfers['season'] = transfers['year']
-
-# Converts the text "21/22" into the number 2021 
-transfers['season'] = transfers['season'].astype(str).str.split('/').str[0].astype(int) + 2000   
-
+# =========================================================
+# --- 2. GET SEASON STATS FUNCTION ---
+# =========================================================
 def get_season_stats(player_ids, season_year):
-    # get matches from the specific season we are scouting 
     season_games = games[games['season'] == season_year]
     
-    # If there are no games found, return empty so the whole script doesn't crash
     if season_games.empty: 
         return pd.DataFrame(columns=['player_id', 'adjusted_goals', 'adjusted_assists', 'adjusted_clean_sheet', 'goals_conceded', 'minutes_played'])
     
-    # Link the player's personal match minutes to the actual final score
     apps = pd.merge(appearances[appearances['player_id'].isin(player_ids)], 
                     season_games[['game_id', 'home_club_goals', 'away_club_goals', 'home_club_id', 'away_club_id']], 
                     on='game_id')
     
-    # A defender gets a clean sheet if they played >= 60 mins AND their team didn't concede    
     apps['is_cleansheet'] = np.where(
         (apps['minutes_played'] >= 60) & (
             ((apps['player_club_id'] == apps['home_club_id']) & (apps['away_club_goals'] == 0)) |
@@ -80,20 +60,17 @@ def get_season_stats(player_ids, season_year):
         ), 1, 0
     )
     
-    # Calculate how many goals their team let in during that match
     apps['goals_conceded'] = np.where(
         apps['player_club_id'] == apps['home_club_id'], 
         apps['away_club_goals'],  
         apps['home_club_goals']   
     )
     
-    # adjust stats based on league difficulty
     c = apps['competition_id'].map(league_coeffecients).fillna(default_coefficient)
     apps['adjusted_goals'] = apps['goals'] * c
     apps['adjusted_assists'] = apps['assists'] * c
     apps['adjusted_clean_sheet'] = apps['is_cleansheet'] * c
     
-    # add all match by match stats to get totals for the whole season 
     return apps.groupby('player_id').agg({
         'adjusted_goals': 'sum', 
         'adjusted_assists': 'sum', 
@@ -103,20 +80,33 @@ def get_season_stats(player_ids, season_year):
     }).reset_index()
 
 
+print("Loading Raw Data...")
+try:
+    transfers = pd.read_csv('./Raw_data/Transfrmarkt_data/transfers.csv')  
+    appearances = pd.read_csv('./Raw_data/Transfrmarkt_data/appearances.csv')
+    games = pd.read_csv('./Raw_data/Transfrmarkt_data/games.csv')
+    players = pd.read_csv('./Raw_data/Transfrmarkt_data/players.csv')
+    clubs = pd.read_csv('./Raw_data/Transfrmarkt_data/clubs.csv')
+    valuations = pd.read_csv('./Raw_data/Transfrmarkt_data/player_valuations.csv')
+except FileNotFoundError as e:
+    print(f"Error: Missing file {e.filename}. Make sure all CSVs are in the same folder as this script.")
+    exit()
 
+if 'transfer_season' in transfers.columns:
+    transfers['season'] = transfers['transfer_season']
+elif 'Season' in transfers.columns:
+    transfers['season'] = transfers['Season']
+elif 'year' in transfers.columns:
+    transfers['season'] = transfers['year']
 
+transfers['season'] = transfers['season'].astype(str).str.split('/').str[0].astype(int) + 2000   
 
-# stores finished data for each season
 all_processed_seasons = []
 
-# loop through each season one by one 
 for season in all_seasons:
     print(f"loading {season} transfers...")
-
-    # find clubs in the top target leagues
     target_club_ids = clubs[clubs['domestic_competition_id'].isin(target_leagues)]['club_id']
     
-    # ignore free transfers and loans 
     season_transfers = transfers[(transfers['season'] == season) & 
                         (transfers['to_club_id'].isin(target_club_ids)) & 
                         (transfers['transfer_fee'] > 0)].copy()
@@ -125,25 +115,18 @@ for season in all_seasons:
     
     player_ids = season_transfers['player_id'].unique()
     
-    # get the stats
     stats_player_season_1 = get_season_stats(player_ids, season - 1)
     stats_player_season_2 = get_season_stats(player_ids, season - 2)
     
-
-    
-    # Merge
     season_transfers = season_transfers.merge(stats_player_season_1, on='player_id', how='left')
     season_transfers = season_transfers.merge(stats_player_season_2, on='player_id', how='left', suffixes=('_season1', '_season2'))
     
     all_processed_seasons.append(season_transfers)
 
-
 full_data = pd.concat(all_processed_seasons)
 
-# Add static player info
 full_data = pd.merge(full_data, players[['player_id', 'name', 'position', 'height_in_cm', 'country_of_citizenship', 'foot', 'contract_expiration_date']], on='player_id', how='left')
 
-# Contracts
 full_data['season_start_date'] = pd.to_datetime(full_data['season'].astype(str) + '-08-01')
 full_data['contract_expiration_date'] = pd.to_datetime(full_data['contract_expiration_date'], errors='coerce')
 full_data['days_left_on_contract'] = (full_data['contract_expiration_date'] - full_data['season_start_date']).dt.days
@@ -151,25 +134,18 @@ full_data['days_left_on_contract'] = (full_data['contract_expiration_date'] - fu
 full_data['days_left_on_contract'] = full_data['days_left_on_contract'].fillna(365)
 full_data['days_left_on_contract'] = full_data['days_left_on_contract'].apply(lambda x: x if x > 0 else 365)
 
-# Age and Encodings
 full_data['age'] = full_data['season'] - pd.to_datetime(players.set_index('player_id').loc[full_data['player_id']]['date_of_birth'].values).year
 full_data['is_tier1_nation'] = full_data['country_of_citizenship'].apply(lambda x: 1 if x in tier_1_nations else 0)
 full_data['is_left_footed'] = full_data['foot'].apply(lambda x: 1 if x == 'left' else 0)
-# Fix missing heights
+
 avg_height = full_data['height_in_cm'].median()
 full_data['height_in_cm'] = full_data['height_in_cm'].fillna(avg_height)
 
-# Fix missing heights 
-avg_height = full_data['height_in_cm'].median()
-full_data['height_in_cm'] = full_data['height_in_cm'].fillna(avg_height)
-
-# Goals Conceded Per 90 Minutes
 full_data['goals_conceded_per_90_season1'] = np.where(full_data['minutes_played_season1'] > 0, 
                                      (full_data['goals_conceded_season1'] / full_data['minutes_played_season1']) * 90, 0)
 full_data['goals_conceded_per_90_season2'] = np.where(full_data['minutes_played_season2'] > 0, 
                                      (full_data['goals_conceded_season2'] / full_data['minutes_played_season2']) * 90, 0)
 
-# Fill Missing Data
 perf_cols = [
     'adjusted_goals_season1', 'adjusted_assists_season1', 'adjusted_clean_sheet_season1', 'minutes_played_season1', 'goals_conceded_season1', 'goals_conceded_per_90_season1',
     'adjusted_goals_season2', 'adjusted_assists_season2', 'adjusted_clean_sheet_season2', 'minutes_played_season2', 'goals_conceded_season2', 'goals_conceded_per_90_season2',
@@ -177,10 +153,8 @@ perf_cols = [
 ]
 full_data[perf_cols] = full_data[perf_cols].fillna(0)
 
-# Drop any rows where we still don't have a market value
 full_data = full_data[full_data['market_value_in_eur'] > 0]
 
-# Final selection
 final_cols = [
     'name', 'transfer_fee', 'market_value_in_eur', 'days_left_on_contract', 
     'age', 'position', 'height_in_cm', 'is_left_footed', 'is_tier1_nation',
@@ -189,18 +163,75 @@ final_cols = [
     'season', 'to_club_name'
 ]
 
-# save as a dataframe 
 train_df = full_data[full_data['season'].isin(training_seasons)][final_cols]
 test_df = full_data[full_data['season'].isin(testing_seasons)][final_cols]
-# Save as CSV
-train_df.to_csv('training_data.csv', index=False)
-test_df.to_csv('testing_data.csv', index=False)
 
-print("\n Datasets compiled.")
-print("\n training data counts ")
-print(train_df['position'].value_counts())
-print(f"Total Players: {len(train_df)}")
 
-print("\ntesting data counts")
-print(test_df['position'].value_counts())
-print(f"Total Players: {len(test_df)}")
+# train_df.to_csv('training_data.csv', index=False)
+# test_df.to_csv('testing_data.csv', index=False)
+
+print("\n--- Basic Datasets Compiled ---")
+print(f"Total Base Training Players: {len(train_df)}")
+print(f"Total Base Testing Players: {len(test_df)}")
+
+
+print("\nLoading FBref advanced scouting data")
+
+fbref_data_filepaths = [
+    './Raw_Data/Fbref_data/cleaned_2019-20.csv', 
+    './Raw_Data//Fbref_data/cleaned_2020-21.csv', 
+    './Raw_Data//Fbref_data/cleaned_2021-22.csv', 
+    './Raw_Data//Fbref_data/cleaned_2022-23.csv', 
+    './Raw_Data//Fbref_data/cleaned_2023-24.csv'
+]
+
+fbref_data_collection = []
+
+for path in fbref_data_filepaths:
+    if os.path.exists(path):
+        seasonal_df = pd.read_csv(path)
+        fbref_data_collection.append(seasonal_df)
+    else:
+        print(f"Warning: File not found at {path}")
+
+if not fbref_data_collection:
+    print("Error: No scouting files were loaded. Please check directory paths.")
+else:
+    full_scouting_df = pd.concat(fbref_data_collection, ignore_index=True)
+    
+    full_scouting_df.rename(columns={'player': 'name'}, inplace=True)
+    full_scouting_df['season'] = full_scouting_df['season'].astype(str).str.split('-').str[-1].astype(int)
+    
+    full_scouting_df = full_scouting_df.drop(columns=[c for c in ['rk', 'nation', 'pos', 'squad', 'comp', 'age', 'born'] if c in full_scouting_df.columns])
+    stats_to_keep = [col for col in full_scouting_df.columns if col not in ['name', 'season']]
+    
+    full_scouting_df = full_scouting_df.drop_duplicates(subset=['name', 'season'])
+    
+    print("combining data")
+    
+    final_training_data = pd.merge(train_df, full_scouting_df, on=['name', 'season'], how='left')
+    final_training_data['has_advanced_stats'] = final_training_data['Expected Goals'].notna().astype(int)
+    
+    mean_stats_by_position = final_training_data.groupby('position')[stats_to_keep].mean()
+    
+    for metric in stats_to_keep:
+        final_training_data[metric] = final_training_data[metric].fillna(
+            final_training_data['position'].map(mean_stats_by_position[metric])
+        )
+    
+    print("Merging scouting stats into Testing Set...")
+    
+    final_testing_data = pd.merge(test_df, full_scouting_df, on=['name', 'season'], how='left')
+    final_testing_data['has_advanced_stats'] = final_testing_data['Expected Goals'].notna().astype(int)
+    
+    for metric in stats_to_keep:
+        final_testing_data[metric] = final_testing_data[metric].fillna(
+            final_testing_data['position'].map(mean_stats_by_position[metric])
+        )
+    
+    final_training_data.to_csv('training_data.csv', index=False)
+    final_testing_data.to_csv('testing_data.csv', index=False)
+    
+    print("\nSuccess! Advanced datasets generated with positional imputation.")
+    print("\n--- Imputation Values (Mean by Position) ---")
+    print(mean_stats_by_position[['Expected Goals', 'Progressive Passes', 'Tackles Won']].round(2))
