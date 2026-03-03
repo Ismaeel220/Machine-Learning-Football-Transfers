@@ -3,16 +3,17 @@ import numpy as np
 import os
 from datetime import datetime
 
-# =========================================================
-# --- 1. CONFIG VARIABLES ---
-# =========================================================
+#seasons for training data
 training_seasons = [2020, 2021, 2022, 2023] 
+#seasons for testing data
 testing_seasons = [2024]
+#all seasons from which data will be used
 all_seasons = training_seasons + testing_seasons
 
+#will be using data from the top 4 european leagues
 target_leagues = ['GB1', 'IT1', 'ES1', 'L1'] 
 
-# Global Football Rankings (Top 76)
+# Global Football Rankings (Top 76)  used to weigh goals and assists
 league_coeffecients = {
     'GB1': 1.000,   'IT1': 0.934,   'ES1': 0.928,   'L1':  0.925,   'FR1': 0.924,
     'BE1': 0.883,   'GB2': 0.876,   'PO1': 0.872,   'BRA1': 0.869,  'MLS1': 0.861,
@@ -40,10 +41,11 @@ tier_1_nations= [
     'Germany', 'Croatia', 'Senegal', 'Italy'
 ]
 
-# =========================================================
-# --- 2. GET SEASON STATS FUNCTION ---
-# =========================================================
+
+#method to get players stats from a specific year 
 def get_season_stats(player_ids, season_year):
+    #filter the games the table to only i
+
     season_games = games[games['season'] == season_year]
     
     if season_games.empty: 
@@ -156,7 +158,7 @@ full_data[perf_cols] = full_data[perf_cols].fillna(0)
 full_data = full_data[full_data['market_value_in_eur'] > 0]
 
 final_cols = [
-    'name', 'transfer_fee', 'market_value_in_eur', 'days_left_on_contract', 
+    'name', 'transfer_fee',  'days_left_on_contract', 
     'age', 'position', 'height_in_cm', 'is_left_footed', 'is_tier1_nation',
     'adjusted_goals_season1', 'adjusted_assists_season1', 'adjusted_clean_sheet_season1', 'goals_conceded_per_90_season1', 'minutes_played_season1',
     'adjusted_goals_season2', 'adjusted_assists_season2', 'adjusted_clean_sheet_season2', 'goals_conceded_per_90_season2', 'minutes_played_season2',
@@ -235,3 +237,4 @@ else:
     print("\nSuccess! Advanced datasets generated with positional imputation.")
     print("\n--- Imputation Values (Mean by Position) ---")
     print(mean_stats_by_position[['Expected Goals', 'Progressive Passes', 'Tackles Won']].round(2))
+
