@@ -2,6 +2,9 @@ import pandas as pd
 import numpy as np
 import os
 from datetime import datetime
+import os
+import shutil
+from pathlib import Path
 
 #CONFIGURATION AND SETUP OF DATA
 
@@ -281,12 +284,22 @@ full_scouting_df = full_scouting_df.drop_duplicates(subset=['name', 'season'])
 print("Combining data...")
 
 #combine transfer market and fbref data
-master_data = pd.merge(all_data, full_scouting_df, on=['name', 'season'], how='left')
-master_data['has_advanced_stats'] = master_data['Expected Goals'].notna().astype(int)
+transfer_dataset = pd.merge(all_data, full_scouting_df, on=['name', 'season'], how='left')
+transfer_dataset['has_advanced_stats'] = transfer_dataset['Expected Goals'].notna().astype(int)
 
 
+# destination folder path
+output_dir = Path.cwd() /"training-testing-data"
 
+# 2. Create the folder automatically if it doesn't exist
+# parents=True creates any missing parent folders in the path
+# exist_ok=True prevents an error if the folder already exists
+output_dir.mkdir(parents=True, exist_ok=True)
 
-master_data.to_csv('master_transfer_dataset.csv', index=False)
+# path where the file will live
+file_path = output_dir /'transfer_dataset.csv'
 
-print("Raw full dataset generated")
+# 4. Save the dataframe to that location
+transfer_dataset.to_csv(file_path, index=False)
+
+print(f"Raw full dataset generated and saved to: {file_path}")

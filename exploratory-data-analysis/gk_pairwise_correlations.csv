@@ -1,0 +1,1910 @@
+Feature 1,Feature 2,Correlation
+% Shots on target,Shots p 90,1.0
+% Shots on target,Total Shots,1.0
+Shots p 90,Total Shots,1.0
+Assists,Assists p 90,1.0
+Assists p 90,Goals & Assists,1.0
+avg_club_spend_x,avg_club_spend_y,1.0
+Assists,Goals & Assists,1.0
+avg_club_spend,avg_club_spend_y,1.0
+avg_club_spend,avg_club_spend_x,1.0
+Avg Mins per Match,Matches Played,1.0
+Assists p 90,adjusted_assists_season1,1.0
+Goals & Assists,adjusted_assists_season1,1.0
+Assists,adjusted_assists_season1,1.0
+Passes Attempted,touches_def_pen,0.99
+Passes Attempted,Progressive passes distance,0.95
+Progressive passes distance,touches_def_pen,0.94
+Matches Played,touches_def_pen,0.94
+Avg Mins per Match,touches_def_pen,0.94
+Passes Attempted,Passes Completed,0.94
+Saves,touches_def_pen,0.94
+Goals against p 90,goals_conceded_per_90_season1,0.94
+Matches Played,Saves,0.93
+Passes Completed,touches_def_pen,0.93
+Avg Mins per Match,Saves,0.93
+Matches Played,Passes Attempted,0.92
+Avg Mins per Match,Passes Attempted,0.92
+Passes Attempted,Saves,0.91
+Clean Sheets,adjusted_clean_sheet_season1,0.91
+Progressive passes distance,Saves,0.91
+adjusted_clean_sheet_season2,minutes_played_season2,0.91
+Goals Against,Saves,0.91
+Matches Played,Progressive passes distance,0.91
+Avg Mins per Match,Progressive passes distance,0.91
+Goals Against,Matches Played,0.9
+Avg Mins per Match,Goals Against,0.9
+Avg Mins per Match,minutes_played_season1,0.89
+Matches Played,minutes_played_season1,0.89
+adjusted_clean_sheet_season1,minutes_played_season1,0.88
+Goals Against,touches_def_pen,0.88
+Goals against p 90,Saves %,-0.88
+Passes Attempted,minutes_played_season1,0.87
+minutes_played_season1,touches_def_pen,0.87
+Passes Completed,Progressive passes distance,0.87
+Tackles Won,Tackles attempted,0.86
+Goals Against,Passes Attempted,0.86
+Goals Against,Progressive passes distance,0.86
+% Successful take-ons,Take ons attempted,0.84
+Progressive passes distance,minutes_played_season1,0.84
+Passes Completed,Saves,0.82
+Saves,minutes_played_season1,0.82
+Avg Mins per Match,Passes Completed,0.81
+Matches Played,Passes Completed,0.81
+Goal creating actions p 90,Shot creating actions p 90,0.81
+Passes Completed,minutes_played_season1,0.81
+Saves %,goals_conceded_per_90_season1,-0.8
+% Long passes completed,Pass completion %,0.78
+Goals Against,Passes Completed,0.76
+% Dribbles tackled,Tackles attempted,0.76
+Goals Against,minutes_played_season1,0.75
+Clearances,Goals Against,0.74
+1/3,Progressive passes distance,0.74
+% Aerial Duels won,Matches Played,0.74
+% Aerial Duels won,touches_def_pen,0.73
+Crosses Stopped,Goal creating actions p 90,0.73
+% Aerial Duels won,Avg Mins per Match,0.73
+Avg Mins per Match,Clearances,0.73
+Clearances,Matches Played,0.73
+% Aerial Duels won,Passes Attempted,0.73
+% Dribbles tackled,Tackles Won,0.73
+% Aerial Duels won,Progressive passes distance,0.72
+Clearances,Saves,0.71
+Clean Sheets,minutes_played_season1,0.71
+% Aerial Duels won,Passes Completed,0.7
+carries final 3rd,carries penalty area,0.7
+Key passes,Passes into penalty area,0.68
+% Aerial Duels won,Goals Against,0.68
+Clearances,Progressive passes distance,0.68
+1/3,Passes into penalty area,0.68
+Avg Mins per Match,Clean Sheets,0.67
+Clean Sheets,Matches Played,0.66
+% Aerial Duels won,Saves,0.66
+goals_conceded_per_90_season1,has_advanced_stats,0.66
+Clearances,touches_def_pen,0.66
+Clearances,Passes Attempted,0.65
+has_advanced_stats,minutes_played_season1,0.65
+% Clean sheets,adjusted_clean_sheet_season1,0.65
+goals_conceded_per_90_season1,minutes_played_season1,0.64
+% Clean sheets,Goals against p 90,-0.63
+% Clean sheets,Saves %,0.63
+1/3,Key passes,0.63
+Clean Sheets,Passes into penalty area,0.62
+Goals against p 90,adjusted_clean_sheet_season1,-0.62
+Clearances,minutes_played_season1,0.62
+% Clean sheets,Clean Sheets,0.62
+Clean Sheets,touches_def_pen,0.61
+Crosses Stopped,Shot creating actions p 90,0.61
+Clean Sheets,Passes Attempted,0.61
+1/3,Passes Attempted,0.6
+minutes_played_season1,minutes_played_season2,0.6
+1/3,Clearances,0.6
+% Clean sheets,goals_conceded_per_90_season1,-0.59
+Clean Sheets,Passes Completed,0.59
+% Aerial Duels won,minutes_played_season1,0.59
+Clean Sheets,Progressive passes distance,0.59
+goals_conceded_per_90_season2,minutes_played_season2,0.58
+Passes into penalty area,adjusted_clean_sheet_season1,0.58
+1/3,Avg Mins per Match,0.58
+1/3,Matches Played,0.58
+avg_club_spend_x,transfer_fee,0.58
+avg_club_spend_y,transfer_fee,0.58
+avg_club_spend,transfer_fee,0.58
+1/3,minutes_played_season1,0.58
+1/3,touches_def_pen,0.57
+adjusted_clean_sheet_season1,adjusted_clean_sheet_season2,0.56
+Goal creating actions p 90,goals_conceded_per_90_season1,0.56
+goals_conceded_per_90_season1,minutes_played_season2,0.56
+1/3,Saves,0.56
+adjusted_clean_sheet_season2,minutes_played_season1,0.55
+goals_conceded_per_90_season1,goals_conceded_per_90_season2,0.55
+Clean Sheets,Goals against p 90,-0.54
+adjusted_clean_sheet_season1,minutes_played_season2,0.54
+Saves %,adjusted_clean_sheet_season1,0.54
+1/3,Goals Against,0.53
+Passes Completed,adjusted_clean_sheet_season1,0.53
+Errors made,Progressive passes distance,0.53
+Clean Sheets,Saves,0.53
+Key passes,minutes_played_season1,0.52
+Clean Sheets,carries final 3rd,0.52
+goals_conceded_per_90_season2,has_advanced_stats,0.52
+Passes into penalty area,Progressive passes distance,0.52
+has_advanced_stats,minutes_played_season2,0.52
+Saves %,minutes_played_season1,0.51
+Passes Attempted,adjusted_clean_sheet_season1,0.51
+Avg Mins per Match,adjusted_clean_sheet_season1,0.51
+Clean Sheets,goals_conceded_per_90_season1,-0.51
+Matches Played,adjusted_clean_sheet_season1,0.51
+Key passes,Progressive passes distance,0.51
+1/3,Errors made,0.51
+Goal creating actions p 90,Goals against p 90,0.51
+Goal creating actions p 90,Saves %,-0.5
+% Aerial Duels won,Errors made,0.5
+Shot creating actions p 90,goals_conceded_per_90_season1,0.5
+Clean Sheets,Saves %,0.5
+% Aerial Duels won,Clean Sheets,0.5
+% Medium passes completed,Clearances,-0.49
+Errors made,Passes Attempted,0.49
+adjusted_clean_sheet_season1,touches_def_pen,0.49
+Passes into penalty area,minutes_played_season1,0.49
+Clearances,Tackles attempted,0.49
+% Medium passes completed,Matches Played,-0.49
+% Medium passes completed,Avg Mins per Match,-0.48
+% Medium passes completed,minutes_played_season1,-0.48
+1/3,Take ons attempted,0.48
+Errors made,Matches Played,0.48
+Avg Mins per Match,Errors made,0.48
+Errors made,Saves,0.48
+% Medium passes completed,Interceptions,-0.48
+Errors made,touches_def_pen,0.47
+% Short pass completed,1/3,-0.47
+Progressive passes distance,adjusted_clean_sheet_season1,0.47
+Progressive passes distance,Take ons attempted,0.47
+adjusted_clean_sheet_season1,transfer_fee,0.47
+goals_conceded_per_90_season2,minutes_played_season1,0.46
+Passes Attempted,Passes into penalty area,0.46
+Clearances,Passes Completed,0.46
+% Aerial Duels won,Clearances,0.46
+Possessions lost,Take ons attempted,0.46
+Errors made,Take ons attempted,0.46
+% Aerial Duels won,% Medium passes completed,-0.45
+minutes_played_season1,transfer_fee,0.45
+% Short pass completed,Passes into penalty area,-0.45
+Interceptions,Saves,0.45
+adjusted_clean_sheet_season1,carries final 3rd,0.45
+Errors made,Goals Against,0.45
+Clearances,Tackles Won,0.45
+adjusted_clean_sheet_season1,has_advanced_stats,0.45
+Avg Mins per Match,Passes into penalty area,0.45
+Key passes,Passes Attempted,0.45
+Goals against p 90,minutes_played_season1,-0.44
+Passes Attempted,Take ons attempted,0.44
+adjusted_clean_sheet_season2,goals_conceded_per_90_season1,0.44
+Goals Against,Interceptions,0.44
+Matches Played,Passes into penalty area,0.44
+% Successful take-ons,touches_def_pen,0.44
+% Medium passes completed,Passes Attempted,-0.44
+Clean Sheets,Progressive Passes,0.44
+Progressive Passes,adjusted_clean_sheet_season1,0.44
+Avg Mins per Match,Interceptions,0.44
+Interceptions,Matches Played,0.44
+% Medium passes completed,Saves,-0.44
+% Long passes completed,height_in_cm,-0.44
+Saves,Saves %,0.44
+% Medium passes completed,Progressive passes distance,-0.43
+Take ons attempted,touches_def_pen,0.43
+Key passes,touches_def_pen,0.43
+Saves,Tackles attempted,0.43
+% Successful take-ons,Passes Attempted,0.43
+1/3,Passes Completed,0.43
+Goals Against,Tackles attempted,0.42
+has_advanced_stats,transfer_fee,0.42
+adjusted_clean_sheet_season1,goals_conceded_per_90_season1,0.42
+Errors made,Key passes,0.42
+% Aerial Duels won,1/3,0.42
+% Medium passes completed,Goals Against,-0.42
+% Medium passes completed,touches_def_pen,-0.42
+Saves %,touches_def_pen,0.42
+days_left_on_contract,season,-0.42
+% Successful take-ons,Avg Mins per Match,0.42
+Avg Mins per Match,Key passes,0.42
+% Successful take-ons,Matches Played,0.42
+Passes into penalty area,touches_def_pen,0.42
+Key passes,Matches Played,0.41
+Passes Attempted,Saves %,0.41
+Take ons attempted,minutes_played_season1,0.41
+Goals Against,Tackles Won,0.41
+Errors made,minutes_played_season1,0.41
+Crosses Stopped,height_in_cm,0.41
+% Successful take-ons,Clean Sheets,0.41
+% Short pass completed,Clearances,-0.41
+% Dribbles tackled,Clearances,0.41
+age,minutes_played_season2,0.41
+Passes Completed,Saves %,0.41
+% Successful take-ons,Passes Completed,0.4
+% Successful take-ons,Saves,0.4
+% Successful take-ons,Progressive passes distance,0.4
+Interceptions,Passes Attempted,0.4
+Key passes,Passes Completed,0.4
+% Dribbles tackled,Saves,0.4
+% Successful take-ons,minutes_played_season1,0.4
+% Penalty saves,Passes Completed,0.4
+Saves,Tackles Won,0.4
+Progressive Passes,carries final 3rd,0.4
+Matches Played,Saves %,0.4
+Passes blocked,adjusted_assists_season2,0.4
+Clearances,Passes into penalty area,0.4
+1/3,Clean Sheets,0.39
+Interceptions,touches_def_pen,0.39
+adjusted_clean_sheet_season2,age,0.39
+% Successful take-ons,age,-0.39
+Errors made,Passes Completed,0.39
+adjusted_clean_sheet_season2,goals_conceded_per_90_season2,0.39
+Avg Mins per Match,Saves %,0.39
+Clearances,Pass completion %,-0.39
+% Penalty saves,Clean Sheets,0.39
+% Aerial Duels won,Interceptions,0.39
+Errors made,Passes into penalty area,0.39
+Avg Mins per Match,Take ons attempted,0.39
+Saves %,Shot creating actions p 90,-0.39
+Matches Played,Take ons attempted,0.39
+% Medium passes completed,1/3,-0.39
+Progressive passes distance,Saves %,0.39
+Goals against p 90,Shot creating actions p 90,0.39
+% Dribbles tackled,Goals Against,0.38
+Avg Mins per Match,Tackles attempted,0.38
+% Long passes completed,minutes_played_season2,0.38
+Saves,Take ons attempted,0.38
+Matches Played,Tackles attempted,0.38
+Key passes,adjusted_clean_sheet_season1,0.38
+Clean Sheets,adjusted_clean_sheet_season2,0.38
+Saves,adjusted_clean_sheet_season1,0.38
+Passes Completed,Take ons attempted,0.38
+Key passes,Saves,0.38
+% Aerial Duels won,Passes into penalty area,0.37
+Goals Against,Take ons attempted,0.37
+Take ons attempted,age,-0.37
+adjusted_clean_sheet_season2,has_advanced_stats,0.37
+% Aerial Duels won,goals_conceded_per_90_season2,0.37
+Clearances,Interceptions,0.37
+% Penalty saves,touches_def_pen,0.37
+Passes Completed,Passes into penalty area,0.37
+age,has_advanced_stats,0.37
+% Penalty saves,Passes Attempted,0.37
+% Successful take-ons,carries final 3rd,0.37
+Pass completion %,height_in_cm,-0.36
+1/3,Pass completion %,-0.36
+Avg Mins per Match,Tackles Won,0.36
+Matches Played,Tackles Won,0.36
+Clearances,Key passes,0.36
+1/3,adjusted_clean_sheet_season1,0.36
+% Aerial Duels won,adjusted_clean_sheet_season1,0.35
+Passes into penalty area,Progressive Passes,0.35
+Crosses Stopped,goals_conceded_per_90_season1,0.35
+Interceptions,Passes Completed,0.35
+age,touches_def_pen,-0.35
+% Penalty saves,Avg Mins per Match,0.35
+Interceptions,Progressive passes distance,0.35
+% Penalty saves,Matches Played,0.35
+Clean Sheets,Take ons attempted,0.35
+Tackles attempted,touches_def_pen,0.34
+Goal creating actions p 90,minutes_played_season1,-0.34
+% Aerial Duels won,Key passes,0.34
+Passes into penalty area,Take ons attempted,0.34
+Interceptions,minutes_played_season1,0.34
+Clearances,age,-0.34
+Take ons attempted,Times tackled during take-on,0.34
+Clean Sheets,Goals Against,0.34
+Key passes,transfer_fee,0.34
+adjusted_clean_sheet_season2,carries final 3rd,0.34
+Goals Against,Key passes,0.34
+Passes into penalty area,Saves,0.34
+% Successful take-ons,Possessions lost,0.34
+Passes Completed,Passes blocked,0.33
+% Penalty saves,Progressive passes distance,0.33
+% Successful take-ons,Goals Against,0.33
+Crosses Stopped,is_left_footed,-0.33
+Goals Against,age,-0.33
+% Clean sheets,carries final 3rd,0.33
+adjusted_clean_sheet_season1,goals_conceded_per_90_season2,0.33
+Tackles Won,touches_def_pen,0.32
+% Medium passes completed,Errors made,-0.32
+Errors made,minutes_played_season2,0.32
+% Dribbles tackled,Avg Mins per Match,0.32
+% Aerial Duels won,age,-0.32
+% Short pass completed,Errors made,-0.32
+Crosses Stopped,avg_club_spend_x,0.32
+Crosses Stopped,avg_club_spend,0.32
+Crosses Stopped,avg_club_spend_y,0.32
+% Aerial Duels won,adjusted_clean_sheet_season2,0.32
+Clean Sheets,Key passes,0.32
+% Dribbles tackled,Matches Played,0.32
+age,goals_conceded_per_90_season1,0.32
+Crosses Stopped,Saves %,-0.32
+Passes Completed,Progressive Passes,0.32
+Interceptions,Tackles attempted,0.32
+% Short pass completed,Key passes,-0.32
+Clearances,Errors made,0.31
+Shot creating actions p 90,is_tier1_nation,-0.31
+Clean Sheets,transfer_fee,0.31
+Possessions lost,Tackles attempted,0.31
+Passes Attempted,age,-0.31
+Possessions lost,age,-0.31
+Matches Played,age,-0.31
+% Dribbles tackled,touches_def_pen,0.31
+Progressive passes distance,Tackles attempted,0.31
+Tackles attempted,days_left_on_contract,0.31
+% Penalty saves,Saves,0.31
+Avg Mins per Match,age,-0.3
+% Dribbles tackled,Progressive Passes,-0.3
+% Long passes completed,Passes Completed,0.3
+% Medium passes completed,Saves %,-0.3
+Clean Sheets,Clearances,0.3
+% Medium passes completed,Passes Completed,-0.3
+Crosses Stopped,Pass completion %,-0.3
+Passes blocked,Progressive passes distance,0.3
+% Dribbles tackled,minutes_played_season1,0.3
+Passes blocked,touches_def_pen,0.3
+adjusted_assists_season2,minutes_played_season2,0.3
+Passes Attempted,Tackles attempted,0.3
+% Successful take-ons,adjusted_clean_sheet_season1,0.3
+% Clean sheets,Passes into penalty area,0.29
+% Clean sheets,Shot creating actions p 90,-0.29
+Passes blocked,avg_club_spend_y,-0.29
+Passes blocked,avg_club_spend,-0.29
+Passes blocked,avg_club_spend_x,-0.29
+age,days_left_on_contract,-0.29
+Goals against p 90,Matches Played,-0.29
+% Successful take-ons,1/3,0.29
+% Aerial Duels won,Goal creating actions p 90,-0.29
+Tackles attempted,minutes_played_season1,0.29
+% Successful take-ons,Passes into penalty area,0.29
+Saves %,season,-0.29
+% Successful take-ons,Errors made,0.29
+Avg Mins per Match,Goals against p 90,-0.29
+% Aerial Duels won,minutes_played_season2,0.29
+adjusted_assists_season2,goals_conceded_per_90_season1,0.29
+Passes Attempted,Passes blocked,0.29
+% Medium passes completed,% Short pass completed,0.28
+Clean Sheets,Errors made,0.28
+% Penalty saves,Goals Against,0.28
+Pass completion %,Passes Completed,0.28
+Goal creating actions p 90,Matches Played,-0.28
+Times tackled during take-on,goals_conceded_per_90_season1,0.28
+Tackles Won,adjusted_assists_season1,0.28
+Goals & Assists,height_in_cm,-0.28
+Assists p 90,height_in_cm,-0.28
+Assists,height_in_cm,-0.28
+Interceptions,Tackles Won,0.28
+Avg Mins per Match,Goal creating actions p 90,-0.28
+% Aerial Duels won,% Penalty saves,0.28
+% Dribbles tackled,adjusted_assists_season2,0.28
+Progressive Passes,Shots p 90,0.28
+Progressive Passes,Total Shots,0.28
+Progressive Passes,Times tackled during take-on,0.28
+% Shots on target,Progressive Passes,0.28
+Saves,age,-0.28
+Possessions lost,Times tackled during take-on,0.27
+Take ons attempted,adjusted_clean_sheet_season1,0.27
+Passes Attempted,Progressive Passes,0.27
+adjusted_clean_sheet_season2,carries penalty area,0.27
+% Medium passes completed,height_in_cm,-0.27
+% Short pass completed,height_in_cm,-0.27
+Goals Against,adjusted_assists_season1,0.27
+Assists,Goals Against,0.27
+Goals & Assists,Goals Against,0.27
+Assists p 90,Goals Against,0.27
+% Aerial Duels won,% Long passes completed,0.27
+Goals against p 90,transfer_fee,-0.27
+% Dribbles tackled,days_left_on_contract,0.27
+Progressive Passes,minutes_played_season1,0.27
+Possessions lost,minutes_played_season2,-0.27
+% Short pass completed,Pass completion %,0.27
+Passes Completed,Tackles Won,0.27
+% Medium passes completed,Passes into penalty area,-0.27
+% Dribbles tackled,Progressive passes distance,0.27
+Passes Completed,Tackles attempted,0.27
+Assists p 90,Tackles Won,0.27
+Assists,Tackles Won,0.27
+Goals & Assists,Tackles Won,0.27
+Passes Attempted,Tackles Won,0.27
+Goals against p 90,touches_def_pen,-0.26
+% Aerial Duels won,% Successful take-ons,0.26
+1/3,is_tier1_nation,0.26
+% Clean sheets,Goal creating actions p 90,-0.26
+Errors made,age,-0.26
+Passes Completed,transfer_fee,0.26
+Goals against p 90,Passes Attempted,-0.26
+Progressive passes distance,age,-0.26
+Times tackled during take-on,is_tier1_nation,-0.26
+Goal creating actions p 90,Passes Attempted,-0.26
+% Successful take-ons,Tackles Won,0.26
+Goal creating actions p 90,is_tier1_nation,-0.26
+Goal creating actions p 90,touches_def_pen,-0.26
+Tackles Won,days_left_on_contract,0.26
+% Medium passes completed,Goal creating actions p 90,0.26
+% Dribbles tackled,Passes Completed,0.25
+% Successful take-ons,carries penalty area,0.25
+% Dribbles tackled,Passes Attempted,0.25
+% Clean sheets,transfer_fee,0.25
+% Penalty saves,adjusted_clean_sheet_season1,0.25
+% Long passes completed,Crosses Stopped,-0.25
+Goals Against,Passes into penalty area,0.25
+Avg Mins per Match,adjusted_clean_sheet_season2,0.25
+Goals against p 90,Passes into penalty area,-0.25
+% Short pass completed,Progressive passes distance,-0.25
+Passes Completed,age,-0.25
+% Medium passes completed,Goals against p 90,0.25
+Goal creating actions p 90,Progressive passes distance,-0.25
+% Clean sheets,% Penalty saves,0.25
+Goal creating actions p 90,Saves,-0.25
+Crosses Stopped,Goals against p 90,0.25
+Goals against p 90,Passes Completed,-0.25
+Goals against p 90,height_in_cm,-0.25
+Matches Played,adjusted_clean_sheet_season2,0.25
+Errors made,adjusted_assists_season2,0.25
+% Aerial Duels won,Progressive Passes,0.25
+Progressive passes distance,Tackles Won,0.25
+Goals Against,Times tackled during take-on,0.25
+Tackles Won,minutes_played_season1,0.24
+% Penalty saves,goals_conceded_per_90_season2,0.24
+Goals against p 90,carries final 3rd,-0.24
+Goal creating actions p 90,Passes Completed,-0.24
+goals_conceded_per_90_season1,transfer_fee,0.24
+avg_club_spend_y,is_tier1_nation,-0.24
+avg_club_spend,is_tier1_nation,-0.24
+avg_club_spend_x,is_tier1_nation,-0.24
+Possessions lost,adjusted_clean_sheet_season2,-0.24
+Passes into penalty area,goals_conceded_per_90_season1,-0.24
+% Clean sheets,Progressive Passes,0.24
+age,height_in_cm,-0.24
+Clearances,Take ons attempted,0.24
+% Medium passes completed,Total Shots,-0.24
+% Medium passes completed,% Shots on target,-0.24
+% Medium passes completed,Shots p 90,-0.24
+carries final 3rd,minutes_played_season1,0.24
+% Dribbles tackled,carries penalty area,0.24
+Interceptions,adjusted_clean_sheet_season2,0.24
+Passes blocked,Saves,0.23
+Goal creating actions p 90,Goals Against,-0.23
+age,minutes_played_season1,0.23
+Tackles attempted,avg_club_spend,-0.23
+Tackles attempted,avg_club_spend_x,-0.23
+Tackles attempted,avg_club_spend_y,-0.23
+Clearances,Times tackled during take-on,0.23
+Goals against p 90,goals_conceded_per_90_season2,0.23
+% Penalty saves,minutes_played_season1,0.23
+Tackles Won,age,-0.23
+% Penalty saves,Progressive Passes,0.23
+carries final 3rd,goals_conceded_per_90_season1,-0.23
+Assists p 90,Passes Attempted,0.23
+Assists,Passes Attempted,0.23
+Goals & Assists,Passes Attempted,0.23
+% Clean sheets,goals_conceded_per_90_season2,-0.23
+Tackles attempted,adjusted_assists_season1,0.23
+Goals against p 90,Progressive passes distance,-0.23
+days_left_on_contract,transfer_fee,0.23
+adjusted_assists_season2,adjusted_clean_sheet_season2,0.23
+Passes Attempted,adjusted_assists_season1,0.22
+age,goals_conceded_per_90_season2,0.22
+Assists p 90,Passes Completed,0.22
+Assists,Passes Completed,0.22
+Goals & Assists,Passes Completed,0.22
+% Medium passes completed,adjusted_clean_sheet_season1,-0.22
+% Medium passes completed,Clean Sheets,-0.22
+Key passes,Take ons attempted,0.22
+Goal creating actions p 90,adjusted_clean_sheet_season1,-0.22
+Saves,adjusted_assists_season1,0.22
+Assists,Saves,0.22
+Assists p 90,Saves,0.22
+Goals & Assists,Saves,0.22
+Crosses Stopped,is_tier1_nation,-0.22
+touches_def_pen,transfer_fee,0.22
+% Aerial Duels won,Tackles attempted,0.22
+adjusted_clean_sheet_season1,age,0.22
+Saves %,goals_conceded_per_90_season2,-0.22
+Passes blocked,season,-0.22
+Errors made,goals_conceded_per_90_season2,0.22
+Passes into penalty area,carries final 3rd,0.22
+Passes Completed,adjusted_assists_season1,0.22
+Progressive Passes,touches_def_pen,0.22
+Crosses Stopped,season,0.22
+Passes Attempted,transfer_fee,0.22
+% Long passes completed,Clearances,-0.22
+is_left_footed,season,-0.22
+Pass completion %,is_tier1_nation,-0.22
+Matches Played,goals_conceded_per_90_season1,-0.21
+Avg Mins per Match,goals_conceded_per_90_season1,-0.21
+days_left_on_contract,is_left_footed,-0.21
+% Aerial Duels won,Take ons attempted,0.21
+goals_conceded_per_90_season2,transfer_fee,0.21
+Goals Against,Possessions lost,0.21
+Times tackled during take-on,age,-0.21
+Clearances,goals_conceded_per_90_season2,0.21
+% Short pass completed,Saves %,-0.21
+Assists p 90,Tackles attempted,0.21
+Assists,Tackles attempted,0.21
+Goals & Assists,Tackles attempted,0.21
+Clearances,Goal creating actions p 90,-0.21
+carries final 3rd,transfer_fee,0.21
+% Dribbles tackled,avg_club_spend_x,-0.21
+% Dribbles tackled,avg_club_spend_y,-0.21
+% Dribbles tackled,avg_club_spend,-0.21
+% Short pass completed,Clean Sheets,-0.21
+Progressive Passes,Progressive passes distance,0.21
+% Long passes completed,Goals against p 90,0.21
+% Aerial Duels won,Tackles Won,0.21
+1/3,Saves %,0.21
+Tackles attempted,age,-0.21
+Times tackled during take-on,minutes_played_season2,-0.21
+Goal creating actions p 90,Pass completion %,-0.2
+Clean Sheets,minutes_played_season2,0.2
+Errors made,Tackles Won,-0.2
+Matches Played,Progressive Passes,0.2
+Clearances,Saves %,0.2
+% Long passes completed,adjusted_clean_sheet_season2,0.2
+Avg Mins per Match,Progressive Passes,0.2
+% Clean sheets,minutes_played_season1,0.2
+% Medium passes completed,Pass completion %,0.2
+Passes blocked,Saves %,0.2
+Key passes,season,0.2
+Goal creating actions p 90,height_in_cm,0.2
+Times tackled during take-on,adjusted_clean_sheet_season2,-0.2
+adjusted_clean_sheet_season1,avg_club_spend,0.2
+adjusted_clean_sheet_season1,avg_club_spend_y,0.2
+adjusted_clean_sheet_season1,avg_club_spend_x,0.2
+% Dribbles tackled,Interceptions,0.2
+% Penalty saves,Passes into penalty area,0.2
+Clean Sheets,Passes blocked,0.2
+Goals against p 90,Saves,-0.2
+% Penalty saves,Goals against p 90,-0.2
+Avg Mins per Match,carries final 3rd,0.2
+Matches Played,carries final 3rd,0.2
+days_left_on_contract,minutes_played_season1,0.2
+% Penalty saves,adjusted_assists_season2,-0.2
+% Penalty saves,avg_club_spend_x,-0.2
+% Penalty saves,avg_club_spend_y,-0.2
+% Penalty saves,avg_club_spend,-0.2
+adjusted_assists_season2,goals_conceded_per_90_season2,0.2
+Crosses Stopped,minutes_played_season1,-0.2
+% Aerial Duels won,transfer_fee,0.2
+Possessions lost,days_left_on_contract,0.2
+age,is_left_footed,0.2
+Key passes,Shot creating actions p 90,0.2
+Possessions lost,Saves,0.2
+Times tackled during take-on,season,0.2
+Crosses Stopped,touches_def_pen,-0.2
+minutes_played_season2,transfer_fee,0.2
+goals_conceded_per_90_season1,touches_def_pen,-0.2
+% Penalty saves,height_in_cm,-0.19
+% Short pass completed,Saves,-0.19
+Passes Completed,goals_conceded_per_90_season1,-0.19
+% Penalty saves,Saves %,0.19
+adjusted_assists_season1,season,-0.19
+Clearances,days_left_on_contract,0.19
+Crosses Stopped,Saves,-0.19
+Passes Attempted,goals_conceded_per_90_season1,-0.19
+Shot creating actions p 90,avg_club_spend_x,0.19
+Shot creating actions p 90,avg_club_spend,0.19
+Shot creating actions p 90,avg_club_spend_y,0.19
+Assists p 90,touches_def_pen,0.19
+Assists,touches_def_pen,0.19
+Goals & Assists,touches_def_pen,0.19
+adjusted_assists_season1,touches_def_pen,0.19
+Progressive Passes,Tackles Won,-0.19
+Clean Sheets,Goal creating actions p 90,-0.19
+% Penalty saves,Assists p 90,0.19
+% Penalty saves,Goals & Assists,0.19
+% Penalty saves,Assists,0.19
+% Penalty saves,age,-0.19
+has_advanced_stats,is_left_footed,0.19
+% Medium passes completed,goals_conceded_per_90_season1,0.19
+% Dribbles tackled,Key passes,0.19
+Goals against p 90,Progressive Passes,-0.19
+Goals Against,Saves %,0.19
+Goals Against,adjusted_clean_sheet_season1,0.19
+% Penalty saves,is_left_footed,0.19
+% Short pass completed,avg_club_spend_y,-0.19
+% Short pass completed,avg_club_spend,-0.19
+% Short pass completed,avg_club_spend_x,-0.19
+% Successful take-ons,Tackles attempted,0.19
+Goals against p 90,adjusted_clean_sheet_season2,-0.19
+% Penalty saves,% Successful take-ons,0.19
+adjusted_assists_season2,minutes_played_season1,0.19
+Passes into penalty area,height_in_cm,0.19
+Passes into penalty area,season,0.19
+% Long passes completed,Goal creating actions p 90,-0.19
+Errors made,Interceptions,0.19
+% Penalty saves,adjusted_assists_season1,0.19
+Passes blocked,days_left_on_contract,-0.19
+Interceptions,avg_club_spend,0.18
+Interceptions,avg_club_spend_y,0.18
+Interceptions,avg_club_spend_x,0.18
+% Penalty saves,minutes_played_season2,-0.18
+height_in_cm,is_tier1_nation,-0.18
+% Clean sheets,Goals Against,-0.18
+1/3,Interceptions,0.18
+Errors made,is_tier1_nation,0.18
+% Successful take-ons,avg_club_spend_y,-0.18
+% Successful take-ons,avg_club_spend_x,-0.18
+% Successful take-ons,avg_club_spend,-0.18
+avg_club_spend,has_advanced_stats,0.18
+avg_club_spend_x,has_advanced_stats,0.18
+avg_club_spend_y,has_advanced_stats,0.18
+Crosses Stopped,Matches Played,-0.18
+Avg Mins per Match,transfer_fee,0.18
+Goals against p 90,Times tackled during take-on,0.18
+Clearances,adjusted_clean_sheet_season1,0.18
+Goals against p 90,days_left_on_contract,-0.18
+% Medium passes completed,Possessions lost,-0.18
+Crosses Stopped,Passes Attempted,-0.18
+carries penalty area,transfer_fee,0.18
+% Long passes completed,Progressive Passes,0.18
+Matches Played,transfer_fee,0.18
+Avg Mins per Match,Crosses Stopped,-0.18
+% Shots on target,Interceptions,0.18
+Interceptions,Shots p 90,0.18
+Interceptions,Total Shots,0.18
+adjusted_clean_sheet_season1,days_left_on_contract,0.18
+Goal creating actions p 90,minutes_played_season2,-0.18
+Saves,avg_club_spend_x,-0.18
+Saves,avg_club_spend_y,-0.18
+Saves,avg_club_spend,-0.18
+Clearances,adjusted_assists_season1,0.18
+avg_club_spend,minutes_played_season1,0.18
+avg_club_spend_y,minutes_played_season1,0.18
+avg_club_spend_x,minutes_played_season1,0.18
+% Successful take-ons,Clearances,0.18
+Errors made,adjusted_clean_sheet_season1,0.18
+Clearances,Possessions lost,0.18
+Pass completion %,Progressive Passes,0.18
+Matches Played,days_left_on_contract,0.18
+Take ons attempted,carries final 3rd,0.18
+Saves %,carries final 3rd,0.18
+Key passes,adjusted_assists_season1,0.18
+% Long passes completed,is_left_footed,0.18
+% Successful take-ons,Saves %,0.18
+Crosses Stopped,Passes Completed,-0.17
+Saves %,transfer_fee,0.17
+Tackles Won,season,-0.17
+Avg Mins per Match,adjusted_assists_season1,0.17
+Key passes,goals_conceded_per_90_season1,-0.17
+% Short pass completed,Goals against p 90,0.17
+Avg Mins per Match,days_left_on_contract,0.17
+Matches Played,adjusted_assists_season1,0.17
+Assists p 90,Avg Mins per Match,0.17
+Assists,Avg Mins per Match,0.17
+Avg Mins per Match,Goals & Assists,0.17
+Saves,days_left_on_contract,0.17
+Crosses Stopped,days_left_on_contract,0.17
+1/3,age,-0.17
+Clearances,season,0.17
+Pass completion %,Passes into penalty area,-0.17
+Assists p 90,Matches Played,0.17
+Goals & Assists,Matches Played,0.17
+Assists,Matches Played,0.17
+Passes Attempted,goals_conceded_per_90_season2,0.17
+% Short pass completed,adjusted_clean_sheet_season1,-0.17
+Assists p 90,Key passes,0.17
+Assists,Key passes,0.17
+Goals & Assists,Key passes,0.17
+adjusted_clean_sheet_season2,is_tier1_nation,0.17
+Goals against p 90,season,0.17
+Passes into penalty area,Saves %,0.17
+% Long passes completed,Progressive passes distance,0.17
+Goals Against,goals_conceded_per_90_season2,0.17
+adjusted_clean_sheet_season2,transfer_fee,0.17
+% Dribbles tackled,% Successful take-ons,0.17
+Passes Attempted,Possessions lost,0.17
+Clearances,Goals & Assists,0.17
+Assists,Clearances,0.17
+Assists p 90,Clearances,0.17
+Saves,adjusted_assists_season2,0.17
+Shot creating actions p 90,goals_conceded_per_90_season2,0.17
+Tackles Won,avg_club_spend_x,-0.17
+Tackles Won,avg_club_spend_y,-0.17
+Tackles Won,avg_club_spend,-0.17
+Goal creating actions p 90,age,0.17
+% Clean sheets,height_in_cm,0.17
+Key passes,Possessions lost,-0.17
+% Aerial Duels won,Passes blocked,0.17
+avg_club_spend,is_left_footed,-0.17
+avg_club_spend_x,is_left_footed,-0.17
+avg_club_spend_y,is_left_footed,-0.17
+Matches Played,is_tier1_nation,0.17
+Avg Mins per Match,is_tier1_nation,0.17
+Possessions lost,Progressive passes distance,0.17
+Crosses Stopped,Goals Against,-0.17
+% Medium passes completed,% Successful take-ons,-0.17
+% Long passes completed,Passes blocked,0.17
+% Aerial Duels won,Saves %,0.17
+% Medium passes completed,avg_club_spend_y,-0.17
+% Medium passes completed,avg_club_spend_x,-0.17
+% Medium passes completed,avg_club_spend,-0.17
+Avg Mins per Match,minutes_played_season2,0.17
+Clean Sheets,is_tier1_nation,0.17
+% Long passes completed,Key passes,0.16
+carries final 3rd,minutes_played_season2,0.16
+Matches Played,minutes_played_season2,0.16
+Errors made,Tackles attempted,-0.16
+Clearances,is_left_footed,-0.16
+Possessions lost,touches_def_pen,0.16
+goals_conceded_per_90_season2,touches_def_pen,0.16
+% Penalty saves,Possessions lost,0.16
+% Penalty saves,Clearances,0.16
+Assists p 90,days_left_on_contract,0.16
+Goals & Assists,days_left_on_contract,0.16
+Assists,days_left_on_contract,0.16
+% Successful take-ons,is_tier1_nation,-0.16
+Progressive passes distance,goals_conceded_per_90_season1,-0.16
+Crosses Stopped,Progressive passes distance,-0.16
+% Aerial Duels won,is_tier1_nation,0.16
+goals_conceded_per_90_season1,height_in_cm,-0.16
+% Short pass completed,Matches Played,-0.16
+adjusted_assists_season1,minutes_played_season1,0.16
+Goals Against,days_left_on_contract,0.16
+Progressive Passes,Tackles attempted,-0.16
+Saves %,adjusted_assists_season2,0.16
+% Short pass completed,Avg Mins per Match,-0.16
+% Medium passes completed,days_left_on_contract,-0.16
+Progressive Passes,goals_conceded_per_90_season1,-0.16
+Errors made,adjusted_clean_sheet_season2,0.16
+Interceptions,minutes_played_season2,0.16
+has_advanced_stats,is_tier1_nation,0.16
+Errors made,Goal creating actions p 90,-0.16
+Assists p 90,season,-0.16
+Assists,season,-0.16
+Goals & Assists,season,-0.16
+carries final 3rd,season,-0.16
+% Medium passes completed,Take ons attempted,-0.16
+age,is_tier1_nation,0.16
+% Medium passes completed,Tackles attempted,-0.16
+1/3,Goals against p 90,-0.16
+% Medium passes completed,% Penalty saves,0.16
+Goals Against,avg_club_spend,-0.15
+Goals Against,avg_club_spend_x,-0.15
+Goals Against,avg_club_spend_y,-0.15
+% Clean sheets,Times tackled during take-on,-0.15
+Passes into penalty area,transfer_fee,0.15
+Matches Played,Passes blocked,0.15
+Possessions lost,goals_conceded_per_90_season2,-0.15
+Saves,season,-0.15
+Pass completion %,Possessions lost,-0.15
+Goal creating actions p 90,days_left_on_contract,-0.15
+Pass completion %,transfer_fee,0.15
+% Successful take-ons,Goals & Assists,-0.15
+% Successful take-ons,Assists p 90,-0.15
+% Successful take-ons,Assists,-0.15
+% Successful take-ons,adjusted_assists_season1,-0.15
+% Medium passes completed,adjusted_assists_season1,0.15
+Errors made,Progressive Passes,0.15
+1/3,adjusted_clean_sheet_season2,0.15
+Matches Played,Possessions lost,0.15
+Passes blocked,goals_conceded_per_90_season1,-0.15
+1/3,transfer_fee,0.15
+Saves %,Times tackled during take-on,-0.15
+Saves %,days_left_on_contract,0.15
+1/3,Goal creating actions p 90,-0.15
+Pass completion %,Passes blocked,0.15
+adjusted_assists_season1,goals_conceded_per_90_season2,0.15
+Passes blocked,Take ons attempted,0.15
+Interceptions,Saves %,0.15
+Avg Mins per Match,Possessions lost,0.15
+Progressive Passes,height_in_cm,-0.15
+% Medium passes completed,Assists,0.15
+% Medium passes completed,Goals & Assists,0.15
+% Medium passes completed,Assists p 90,0.15
+Assists,Interceptions,0.15
+Goals & Assists,Interceptions,0.15
+Assists p 90,Interceptions,0.15
+Avg Mins per Match,Passes blocked,0.15
+Progressive passes distance,adjusted_clean_sheet_season2,0.15
+Progressive Passes,age,-0.15
+% Dribbles tackled,Goal creating actions p 90,-0.15
+% Short pass completed,adjusted_clean_sheet_season2,-0.15
+Possessions lost,Progressive Passes,0.15
+Clearances,adjusted_assists_season2,0.15
+% Short pass completed,Crosses Stopped,-0.15
+% Aerial Duels won,% Dribbles tackled,0.15
+% Long passes completed,days_left_on_contract,-0.15
+Progressive passes distance,goals_conceded_per_90_season2,0.15
+% Penalty saves,% Short pass completed,0.15
+Avg Mins per Match,Pass completion %,-0.15
+Clean Sheets,Interceptions,0.15
+Matches Played,Pass completion %,-0.15
+Saves %,Tackles attempted,0.15
+Goals against p 90,Key passes,-0.15
+Clean Sheets,days_left_on_contract,0.15
+% Medium passes completed,Key passes,-0.15
+% Penalty saves,Total Shots,-0.15
+% Penalty saves,Shots p 90,-0.15
+% Penalty saves,% Shots on target,-0.15
+% Penalty saves,carries penalty area,-0.15
+carries final 3rd,is_tier1_nation,0.15
+% Aerial Duels won,carries final 3rd,0.15
+Passes blocked,adjusted_clean_sheet_season1,0.15
+1/3,minutes_played_season2,0.15
+Assists p 90,Progressive passes distance,0.14
+Assists,Progressive passes distance,0.14
+Goals & Assists,Progressive passes distance,0.14
+Assists p 90,minutes_played_season1,0.14
+Assists,minutes_played_season1,0.14
+Goals & Assists,minutes_played_season1,0.14
+% Penalty saves,carries final 3rd,0.14
+1/3,Possessions lost,0.14
+Errors made,Passes blocked,0.14
+% Medium passes completed,adjusted_clean_sheet_season2,-0.14
+% Long passes completed,Saves %,-0.14
+1/3,goals_conceded_per_90_season1,-0.14
+Progressive passes distance,adjusted_assists_season1,0.14
+% Clean sheets,days_left_on_contract,0.14
+Passes into penalty area,Shot creating actions p 90,0.14
+Progressive passes distance,minutes_played_season2,0.14
+Goal creating actions p 90,adjusted_clean_sheet_season2,-0.14
+Clearances,is_tier1_nation,0.14
+adjusted_assists_season1,days_left_on_contract,0.14
+carries penalty area,minutes_played_season2,0.14
+% Short pass completed,Interceptions,-0.14
+Errors made,Pass completion %,-0.14
+Progressive Passes,transfer_fee,0.14
+Shot creating actions p 90,minutes_played_season2,-0.14
+% Aerial Duels won,Goals against p 90,-0.14
+Clean Sheets,height_in_cm,0.14
+Passes Completed,goals_conceded_per_90_season2,0.14
+Assists p 90,Progressive Passes,0.14
+Assists,Progressive Passes,0.14
+Goals & Assists,Progressive Passes,0.14
+% Short pass completed,minutes_played_season1,-0.14
+% Penalty saves,days_left_on_contract,0.14
+Saves,goals_conceded_per_90_season1,-0.14
+% Long passes completed,goals_conceded_per_90_season2,0.14
+Passes into penalty area,age,-0.14
+% Penalty saves,Tackles attempted,0.14
+Goals Against,Pass completion %,-0.14
+% Short pass completed,Progressive Passes,0.14
+Passes Completed,carries final 3rd,0.14
+Interceptions,adjusted_assists_season1,0.14
+Assists p 90,Take ons attempted,-0.14
+Goals & Assists,Take ons attempted,-0.14
+Assists,Take ons attempted,-0.14
+Take ons attempted,adjusted_assists_season1,-0.14
+days_left_on_contract,touches_def_pen,0.14
+Assists p 90,avg_club_spend,0.14
+Assists p 90,avg_club_spend_y,0.14
+Assists p 90,avg_club_spend_x,0.14
+Goals & Assists,avg_club_spend,0.14
+Assists,avg_club_spend,0.14
+Assists,avg_club_spend_x,0.14
+Assists,avg_club_spend_y,0.14
+Goals & Assists,avg_club_spend_y,0.14
+Goals & Assists,avg_club_spend_x,0.14
+1/3,Shot creating actions p 90,0.14
+Progressive passes distance,transfer_fee,0.14
+% Dribbles tackled,% Shots on target,-0.14
+% Dribbles tackled,Times tackled during take-on,-0.14
+% Dribbles tackled,Total Shots,-0.14
+% Dribbles tackled,Shots p 90,-0.14
+% Short pass completed,goals_conceded_per_90_season1,0.14
+% Aerial Duels won,adjusted_assists_season2,-0.14
+Goals against p 90,Passes blocked,-0.13
+Clearances,avg_club_spend_y,-0.13
+Clearances,avg_club_spend,-0.13
+Clearances,avg_club_spend_x,-0.13
+avg_club_spend_y,season,0.13
+avg_club_spend_x,season,0.13
+avg_club_spend,season,0.13
+Total Shots,height_in_cm,0.13
+Shots p 90,height_in_cm,0.13
+% Shots on target,height_in_cm,0.13
+Progressive passes distance,Times tackled during take-on,0.13
+Passes Attempted,Times tackled during take-on,0.13
+% Clean sheets,age,0.13
+Tackles Won,goals_conceded_per_90_season2,-0.13
+% Successful take-ons,Goals against p 90,-0.13
+Pass completion %,carries final 3rd,0.13
+adjusted_assists_season1,transfer_fee,0.13
+goals_conceded_per_90_season2,height_in_cm,-0.13
+% Clean sheets,% Long passes completed,-0.13
+% Long passes completed,carries penalty area,0.13
+Times tackled during take-on,adjusted_clean_sheet_season1,-0.13
+Saves %,height_in_cm,0.13
+Saves,Total Shots,0.13
+% Shots on target,Saves,0.13
+Saves,Shots p 90,0.13
+% Long passes completed,is_tier1_nation,-0.13
+is_left_footed,minutes_played_season2,0.13
+Passes blocked,transfer_fee,-0.13
+% Long passes completed,Possessions lost,-0.13
+adjusted_assists_season2,age,0.13
+Progressive Passes,adjusted_assists_season1,0.13
+Possessions lost,avg_club_spend_x,-0.13
+Possessions lost,avg_club_spend_y,-0.13
+Possessions lost,avg_club_spend,-0.13
+% Medium passes completed,age,0.13
+% Clean sheets,Passes Completed,0.13
+Passes into penalty area,is_tier1_nation,0.13
+Passes into penalty area,adjusted_assists_season2,-0.13
+% Shots on target,Tackles attempted,-0.13
+Tackles attempted,Total Shots,-0.13
+Shots p 90,Tackles attempted,-0.13
+% Clean sheets,adjusted_assists_season1,-0.13
+% Aerial Duels won,% Short pass completed,-0.13
+Passes into penalty area,adjusted_clean_sheet_season2,0.13
+Interceptions,Times tackled during take-on,-0.13
+% Clean sheets,Assists p 90,-0.13
+% Clean sheets,Goals & Assists,-0.13
+% Clean sheets,Assists,-0.13
+% Clean sheets,% Short pass completed,-0.13
+Goal creating actions p 90,Tackles attempted,-0.13
+Tackles attempted,Take ons attempted,0.13
+% Penalty saves,adjusted_clean_sheet_season2,-0.13
+days_left_on_contract,height_in_cm,0.12
+Shot creating actions p 90,carries penalty area,-0.12
+is_tier1_nation,minutes_played_season2,0.12
+Passes blocked,is_tier1_nation,0.12
+Assists p 90,Shot creating actions p 90,-0.12
+Assists,Shot creating actions p 90,-0.12
+Goals & Assists,Shot creating actions p 90,-0.12
+1/3,Tackles attempted,0.12
+adjusted_assists_season1,is_left_footed,0.12
+Passes Attempted,Total Shots,0.12
+Passes Attempted,Shots p 90,0.12
+% Shots on target,Passes Attempted,0.12
+Shots p 90,transfer_fee,-0.12
+Total Shots,transfer_fee,-0.12
+% Shots on target,transfer_fee,-0.12
+Shot creating actions p 90,adjusted_assists_season1,-0.12
+Progressive Passes,Saves %,0.12
+1/3,Passes blocked,0.12
+% Dribbles tackled,height_in_cm,-0.12
+height_in_cm,minutes_played_season2,-0.12
+1/3,season,0.12
+Take ons attempted,carries penalty area,0.12
+% Short pass completed,Passes Attempted,-0.12
+Interceptions,Passes blocked,0.12
+% Aerial Duels won,% Shots on target,0.12
+% Aerial Duels won,carries penalty area,0.12
+% Aerial Duels won,Shots p 90,0.12
+% Aerial Duels won,Total Shots,0.12
+is_tier1_nation,season,-0.12
+Progressive Passes,is_tier1_nation,-0.12
+% Successful take-ons,season,-0.12
+Matches Played,avg_club_spend_y,-0.12
+Matches Played,avg_club_spend_x,-0.12
+Matches Played,avg_club_spend,-0.12
+adjusted_assists_season2,avg_club_spend,0.12
+adjusted_assists_season2,avg_club_spend_x,0.12
+adjusted_assists_season2,avg_club_spend_y,0.12
+Progressive passes distance,avg_club_spend,-0.12
+Progressive passes distance,avg_club_spend_x,-0.12
+Progressive passes distance,avg_club_spend_y,-0.12
+Avg Mins per Match,avg_club_spend_y,-0.12
+Avg Mins per Match,avg_club_spend,-0.12
+Avg Mins per Match,avg_club_spend_x,-0.12
+adjusted_clean_sheet_season2,avg_club_spend,0.12
+adjusted_clean_sheet_season2,avg_club_spend_x,0.12
+adjusted_clean_sheet_season2,avg_club_spend_y,0.12
+% Clean sheets,minutes_played_season2,-0.12
+% Long passes completed,age,0.12
+Progressive Passes,Take ons attempted,0.12
+% Clean sheets,Tackles Won,-0.12
+Avg Mins per Match,carries penalty area,0.12
+% Successful take-ons,height_in_cm,0.12
+Matches Played,carries penalty area,0.12
+% Successful take-ons,Passes blocked,0.12
+% Penalty saves,goals_conceded_per_90_season1,-0.12
+Shot creating actions p 90,Tackles Won,-0.12
+1/3,carries final 3rd,-0.12
+Goals against p 90,Pass completion %,0.12
+% Clean sheets,Tackles attempted,-0.12
+Assists,transfer_fee,0.12
+Assists p 90,transfer_fee,0.12
+Goals & Assists,transfer_fee,0.12
+Passes blocked,minutes_played_season1,0.12
+Goal creating actions p 90,transfer_fee,-0.12
+Shot creating actions p 90,adjusted_clean_sheet_season2,-0.12
+Tackles attempted,season,-0.12
+% Dribbles tackled,Saves %,0.12
+Pass completion %,avg_club_spend,0.12
+Pass completion %,avg_club_spend_y,0.12
+Pass completion %,avg_club_spend_x,0.12
+adjusted_clean_sheet_season2,season,-0.12
+Possessions lost,goals_conceded_per_90_season1,0.12
+Tackles Won,Take ons attempted,0.12
+Possessions lost,is_left_footed,-0.12
+adjusted_clean_sheet_season2,days_left_on_contract,0.12
+Interceptions,Shot creating actions p 90,-0.12
+% Shots on target,Goals Against,0.12
+Goals Against,Shots p 90,0.12
+Goals Against,Total Shots,0.12
+Saves,transfer_fee,0.12
+Take ons attempted,height_in_cm,0.12
+adjusted_assists_season2,adjusted_clean_sheet_season1,0.12
+Saves,goals_conceded_per_90_season2,0.12
+Key passes,Saves %,0.12
+% Shots on target,Progressive passes distance,0.12
+Progressive passes distance,Shots p 90,0.12
+Progressive passes distance,Total Shots,0.12
+% Long passes completed,adjusted_clean_sheet_season1,0.11
+Assists,adjusted_clean_sheet_season2,-0.11
+Goals & Assists,adjusted_clean_sheet_season2,-0.11
+Assists p 90,adjusted_clean_sheet_season2,-0.11
+age,carries final 3rd,-0.11
+Progressive passes distance,is_tier1_nation,0.11
+avg_club_spend,goals_conceded_per_90_season1,0.11
+avg_club_spend_y,goals_conceded_per_90_season1,0.11
+avg_club_spend_x,goals_conceded_per_90_season1,0.11
+Saves,adjusted_clean_sheet_season2,0.11
+Passes into penalty area,Times tackled during take-on,-0.11
+Passes into penalty area,carries penalty area,-0.11
+Possessions lost,season,0.11
+Pass completion %,carries penalty area,0.11
+Goal creating actions p 90,Interceptions,-0.11
+avg_club_spend_y,minutes_played_season2,0.11
+avg_club_spend,minutes_played_season2,0.11
+avg_club_spend_x,minutes_played_season2,0.11
+Take ons attempted,avg_club_spend_x,-0.11
+Take ons attempted,avg_club_spend,-0.11
+Take ons attempted,avg_club_spend_y,-0.11
+Goals & Assists,is_tier1_nation,-0.11
+Assists,is_tier1_nation,-0.11
+Assists p 90,is_tier1_nation,-0.11
+1/3,days_left_on_contract,0.11
+Passes Attempted,days_left_on_contract,0.11
+Crosses Stopped,adjusted_assists_season1,-0.11
+Tackles attempted,goals_conceded_per_90_season2,-0.11
+Pass completion %,adjusted_clean_sheet_season1,0.11
+Shot creating actions p 90,carries final 3rd,-0.11
+Goal creating actions p 90,Key passes,-0.11
+adjusted_clean_sheet_season2,is_left_footed,0.11
+Assists p 90,Crosses Stopped,-0.11
+Assists,Crosses Stopped,-0.11
+Crosses Stopped,Goals & Assists,-0.11
+1/3,height_in_cm,0.11
+1/3,Total Shots,0.11
+% Shots on target,1/3,0.11
+1/3,Shots p 90,0.11
+Goal creating actions p 90,Tackles Won,-0.11
+Interceptions,is_left_footed,-0.11
+carries penalty area,season,-0.11
+Key passes,Total Shots,-0.11
+% Shots on target,Key passes,-0.11
+Key passes,carries penalty area,-0.11
+Key passes,Times tackled during take-on,-0.11
+Key passes,Shots p 90,-0.11
+adjusted_assists_season2,has_advanced_stats,0.11
+adjusted_assists_season1,has_advanced_stats,0.11
+Progressive Passes,Saves,0.11
+Key passes,Progressive Passes,0.11
+% Clean sheets,% Successful take-ons,0.11
+Assists p 90,Goals against p 90,0.11
+Goals & Assists,Goals against p 90,0.11
+Assists,Goals against p 90,0.11
+Interceptions,is_tier1_nation,0.11
+Crosses Stopped,age,0.11
+Assists,is_left_footed,-0.11
+Goals & Assists,is_left_footed,-0.11
+Assists p 90,is_left_footed,-0.11
+carries final 3rd,is_left_footed,-0.11
+Pass completion %,minutes_played_season2,0.11
+Shot creating actions p 90,days_left_on_contract,-0.11
+% Medium passes completed,carries final 3rd,0.11
+Goals Against,carries penalty area,0.11
+% Long passes completed,Passes Attempted,0.11
+Goals Against,is_left_footed,0.11
+Goals against p 90,adjusted_assists_season1,0.11
+Pass completion %,Saves,-0.11
+% Successful take-ons,Progressive Passes,0.11
+adjusted_assists_season2,transfer_fee,0.11
+carries final 3rd,touches_def_pen,0.11
+is_left_footed,transfer_fee,-0.11
+Tackles attempted,minutes_played_season2,-0.11
+adjusted_assists_season1,goals_conceded_per_90_season1,0.11
+% Shots on target,% Successful take-ons,-0.11
+% Successful take-ons,Shots p 90,-0.11
+% Successful take-ons,Total Shots,-0.11
+Goals against p 90,is_tier1_nation,-0.11
+Saves,is_tier1_nation,0.11
+1/3,carries penalty area,-0.11
+Goals Against,is_tier1_nation,0.11
+Clean Sheets,Times tackled during take-on,-0.11
+Assists p 90,goals_conceded_per_90_season1,0.11
+Goals & Assists,goals_conceded_per_90_season1,0.11
+Assists,goals_conceded_per_90_season1,0.11
+Goals against p 90,avg_club_spend_x,-0.11
+Goals against p 90,avg_club_spend,-0.11
+Goals against p 90,avg_club_spend_y,-0.11
+Pass completion %,Take ons attempted,-0.11
+% Dribbles tackled,% Long passes completed,0.11
+Total Shots,touches_def_pen,0.11
+Shots p 90,touches_def_pen,0.11
+% Shots on target,touches_def_pen,0.11
+Key passes,Tackles attempted,0.11
+Clearances,height_in_cm,0.1
+Pass completion %,Shot creating actions p 90,-0.1
+avg_club_spend_x,touches_def_pen,-0.1
+avg_club_spend,touches_def_pen,-0.1
+avg_club_spend_y,touches_def_pen,-0.1
+adjusted_assists_season1,adjusted_clean_sheet_season1,0.1
+Take ons attempted,transfer_fee,0.1
+% Shots on target,Tackles Won,-0.1
+Tackles Won,Times tackled during take-on,-0.1
+Shots p 90,Tackles Won,-0.1
+Tackles Won,Total Shots,-0.1
+Interceptions,height_in_cm,0.1
+% Dribbles tackled,Errors made,-0.1
+Avg Mins per Match,goals_conceded_per_90_season2,0.1
+Times tackled during take-on,transfer_fee,-0.1
+Errors made,avg_club_spend_x,0.1
+Errors made,avg_club_spend_y,0.1
+Errors made,avg_club_spend,0.1
+Errors made,Saves %,0.1
+% Clean sheets,is_tier1_nation,0.1
+Key passes,is_tier1_nation,0.1
+Shots p 90,is_tier1_nation,0.1
+Total Shots,is_tier1_nation,0.1
+% Shots on target,is_tier1_nation,0.1
+carries penalty area,is_tier1_nation,0.1
+Matches Played,goals_conceded_per_90_season2,0.1
+% Successful take-ons,goals_conceded_per_90_season1,-0.1
+% Dribbles tackled,% Short pass completed,0.1
+has_advanced_stats,season,-0.1
+Key passes,avg_club_spend,0.1
+Key passes,avg_club_spend_x,0.1
+Key passes,avg_club_spend_y,0.1
+Crosses Stopped,transfer_fee,0.1
+% Dribbles tackled,1/3,0.1
+% Penalty saves,Crosses Stopped,-0.1
+Clearances,carries final 3rd,-0.1
+Passes blocked,Possessions lost,-0.1
+carries penalty area,minutes_played_season1,0.1
+% Dribbles tackled,age,-0.1
+Clean Sheets,carries penalty area,0.1
+Errors made,Possessions lost,0.1
+% Long passes completed,% Medium passes completed,0.1
+Clearances,Goals against p 90,-0.1
+Saves %,Take ons attempted,0.1
+adjusted_assists_season2,touches_def_pen,0.1
+adjusted_assists_season1,minutes_played_season2,0.1
+% Clean sheets,Passes blocked,0.1
+% Aerial Duels won,is_left_footed,0.1
+Crosses Stopped,Passes blocked,-0.1
+Key passes,days_left_on_contract,0.1
+Passes Completed,days_left_on_contract,0.1
+Crosses Stopped,adjusted_assists_season2,-0.1
+Clean Sheets,age,-0.1
+Passes Completed,Times tackled during take-on,0.1
+Pass completion %,Total Shots,-0.1
+% Shots on target,Pass completion %,-0.1
+Pass completion %,Shots p 90,-0.1
+Goals Against,adjusted_clean_sheet_season2,0.1
+% Long passes completed,Clean Sheets,0.1
+days_left_on_contract,is_tier1_nation,0.1
+Possessions lost,minutes_played_season1,0.1
+avg_club_spend,days_left_on_contract,0.1
+avg_club_spend_y,days_left_on_contract,0.1
+avg_club_spend_x,days_left_on_contract,0.1
+% Shots on target,goals_conceded_per_90_season2,0.1
+Shots p 90,goals_conceded_per_90_season2,0.1
+Total Shots,goals_conceded_per_90_season2,0.1
+Take ons attempted,Total Shots,-0.1
+Shots p 90,Take ons attempted,-0.1
+% Shots on target,Take ons attempted,-0.1
+Progressive passes distance,is_left_footed,0.09
+Saves,minutes_played_season2,0.09
+Passes blocked,Passes into penalty area,0.09
+Avg Mins per Match,Times tackled during take-on,0.09
+is_left_footed,minutes_played_season1,0.09
+% Clean sheets,Errors made,-0.09
+Take ons attempted,is_left_footed,-0.09
+Passes blocked,age,-0.09
+% Medium passes completed,is_left_footed,0.09
+% Clean sheets,Clearances,-0.09
+1/3,Tackles Won,0.09
+Matches Played,Times tackled during take-on,0.09
+Crosses Stopped,Times tackled during take-on,0.09
+Passes Completed,minutes_played_season2,0.09
+Goals & Assists,Passes blocked,-0.09
+Assists,Passes blocked,-0.09
+Passes blocked,carries final 3rd,-0.09
+Assists p 90,Passes blocked,-0.09
+Passes blocked,adjusted_assists_season1,-0.09
+% Long passes completed,touches_def_pen,0.09
+Shot creating actions p 90,Tackles attempted,-0.09
+% Dribbles tackled,Shot creating actions p 90,-0.09
+% Clean sheets,Interceptions,-0.09
+Shot creating actions p 90,minutes_played_season1,-0.09
+% Clean sheets,% Dribbles tackled,-0.09
+Passes Completed,carries penalty area,0.09
+Take ons attempted,is_tier1_nation,-0.09
+Times tackled during take-on,touches_def_pen,0.09
+Interceptions,Passes into penalty area,0.09
+Passes Completed,Possessions lost,0.09
+% Penalty saves,Goal creating actions p 90,-0.09
+Passes Attempted,carries final 3rd,0.09
+% Long passes completed,adjusted_assists_season1,-0.09
+Saves %,is_left_footed,0.09
+Progressive Passes,is_left_footed,-0.09
+% Long passes completed,goals_conceded_per_90_season1,0.09
+Assists p 90,Passes into penalty area,0.09
+Goals & Assists,Passes into penalty area,0.09
+Assists,Passes into penalty area,0.09
+Passes into penalty area,adjusted_assists_season1,0.09
+% Clean sheets,Pass completion %,0.09
+Goal creating actions p 90,Passes into penalty area,-0.09
+Errors made,Goals against p 90,-0.09
+Goals Against,Passes blocked,0.09
+% Medium passes completed,season,-0.09
+Goals Against,goals_conceded_per_90_season1,0.09
+% Short pass completed,age,-0.09
+adjusted_assists_season1,age,0.09
+Tackles Won,carries penalty area,0.09
+% Long passes completed,carries final 3rd,0.09
+Passes blocked,goals_conceded_per_90_season2,0.09
+adjusted_assists_season2,is_left_footed,-0.09
+adjusted_assists_season1,height_in_cm,-0.09
+avg_club_spend_x,height_in_cm,0.09
+avg_club_spend,height_in_cm,0.09
+avg_club_spend_y,height_in_cm,0.09
+% Short pass completed,touches_def_pen,-0.09
+Clean Sheets,adjusted_assists_season2,-0.09
+% Dribbles tackled,adjusted_clean_sheet_season2,0.09
+% Short pass completed,Goals Against,-0.09
+Passes Attempted,adjusted_assists_season2,0.09
+adjusted_clean_sheet_season2,touches_def_pen,0.09
+adjusted_assists_season1,avg_club_spend_y,0.09
+adjusted_assists_season1,avg_club_spend_x,0.09
+adjusted_assists_season1,avg_club_spend,0.09
+% Clean sheets,Passes Attempted,0.09
+Key passes,age,-0.09
+% Shots on target,Shot creating actions p 90,-0.09
+Shot creating actions p 90,Shots p 90,-0.09
+Shot creating actions p 90,Total Shots,-0.09
+Passes Attempted,minutes_played_season2,0.09
+% Short pass completed,goals_conceded_per_90_season2,0.09
+Clean Sheets,is_left_footed,-0.09
+Progressive passes distance,adjusted_assists_season2,0.09
+Passes Completed,is_tier1_nation,-0.09
+days_left_on_contract,has_advanced_stats,0.08
+Shots p 90,avg_club_spend_y,-0.08
+Shots p 90,avg_club_spend,-0.08
+Shots p 90,avg_club_spend_x,-0.08
+% Shots on target,avg_club_spend_y,-0.08
+% Shots on target,avg_club_spend,-0.08
+% Shots on target,avg_club_spend_x,-0.08
+Total Shots,avg_club_spend_y,-0.08
+Total Shots,avg_club_spend_x,-0.08
+Total Shots,avg_club_spend,-0.08
+% Clean sheets,adjusted_clean_sheet_season2,0.08
+% Successful take-ons,Interceptions,0.08
+% Long passes completed,Assists,-0.08
+% Long passes completed,Assists p 90,-0.08
+% Long passes completed,Goals & Assists,-0.08
+% Clean sheets,is_left_footed,-0.08
+Saves %,minutes_played_season2,-0.08
+Goals Against,adjusted_assists_season2,0.08
+Key passes,Tackles Won,0.08
+Matches Played,Shot creating actions p 90,-0.08
+Progressive passes distance,days_left_on_contract,0.08
+% Clean sheets,Take ons attempted,0.08
+% Medium passes completed,transfer_fee,-0.08
+Clean Sheets,Shot creating actions p 90,-0.08
+Progressive Passes,carries penalty area,-0.08
+Tackles attempted,carries final 3rd,-0.08
+Possessions lost,adjusted_assists_season2,-0.08
+Progressive Passes,season,0.08
+Avg Mins per Match,Shot creating actions p 90,-0.08
+Assists p 90,goals_conceded_per_90_season2,0.08
+Goals & Assists,goals_conceded_per_90_season2,0.08
+Assists,goals_conceded_per_90_season2,0.08
+% Aerial Duels won,Assists p 90,0.08
+% Aerial Duels won,Goals & Assists,0.08
+% Aerial Duels won,Assists,0.08
+% Dribbles tackled,adjusted_assists_season1,0.08
+Tackles Won,transfer_fee,0.08
+% Clean sheets,1/3,0.08
+Passes Completed,adjusted_clean_sheet_season2,0.08
+% Aerial Duels won,Possessions lost,0.08
+height_in_cm,transfer_fee,0.08
+Passes Attempted,adjusted_clean_sheet_season2,0.08
+Passes blocked,Shot creating actions p 90,0.08
+Saves %,Tackles Won,0.08
+% Short pass completed,adjusted_assists_season1,-0.08
+Shot creating actions p 90,season,0.08
+% Short pass completed,carries final 3rd,0.08
+Saves %,carries penalty area,0.08
+% Clean sheets,Matches Played,0.08
+is_tier1_nation,touches_def_pen,0.08
+Pass completion %,Progressive passes distance,-0.08
+goals_conceded_per_90_season1,is_left_footed,0.08
+% Aerial Duels won,adjusted_assists_season1,0.08
+% Penalty saves,Interceptions,0.08
+% Clean sheets,Avg Mins per Match,0.08
+% Penalty saves,1/3,0.08
+% Short pass completed,Times tackled during take-on,0.08
+% Short pass completed,carries penalty area,0.08
+Crosses Stopped,adjusted_clean_sheet_season2,0.08
+minutes_played_season2,touches_def_pen,0.08
+Possessions lost,Tackles Won,0.08
+Assists,adjusted_assists_season2,-0.08
+Goals & Assists,adjusted_assists_season2,-0.08
+Assists p 90,adjusted_assists_season2,-0.08
+adjusted_assists_season2,carries final 3rd,-0.08
+age,transfer_fee,-0.08
+is_left_footed,is_tier1_nation,0.08
+has_advanced_stats,height_in_cm,-0.08
+Goals Against,transfer_fee,0.08
+Errors made,transfer_fee,0.08
+% Successful take-ons,transfer_fee,0.08
+Shots p 90,is_left_footed,-0.08
+Total Shots,is_left_footed,-0.08
+% Shots on target,is_left_footed,-0.08
+Times tackled during take-on,is_left_footed,-0.08
+carries penalty area,is_left_footed,-0.08
+% Aerial Duels won,height_in_cm,-0.08
+% Short pass completed,Goal creating actions p 90,0.08
+Interceptions,adjusted_clean_sheet_season1,0.08
+is_tier1_nation,minutes_played_season1,0.08
+% Short pass completed,Assists p 90,-0.07
+% Short pass completed,Assists,-0.07
+% Short pass completed,Goals & Assists,-0.07
+Clearances,Passes blocked,0.07
+Passes Completed,Shots p 90,0.07
+Passes Completed,Total Shots,0.07
+% Shots on target,Passes Completed,0.07
+Goal creating actions p 90,avg_club_spend,0.07
+Goal creating actions p 90,avg_club_spend_x,0.07
+Goal creating actions p 90,avg_club_spend_y,0.07
+% Aerial Duels won,Crosses Stopped,-0.07
+Saves,is_left_footed,0.07
+Goals & Assists,minutes_played_season2,-0.07
+Assists,minutes_played_season2,-0.07
+Assists p 90,minutes_played_season2,-0.07
+days_left_on_contract,goals_conceded_per_90_season1,0.07
+% Successful take-ons,Times tackled during take-on,0.07
+Clean Sheets,Tackles Won,0.07
+Take ons attempted,goals_conceded_per_90_season2,-0.07
+carries penalty area,touches_def_pen,0.07
+Shot creating actions p 90,Take ons attempted,0.07
+Crosses Stopped,Take ons attempted,0.07
+Times tackled during take-on,minutes_played_season1,0.07
+% Clean sheets,touches_def_pen,0.07
+Tackles Won,is_tier1_nation,-0.07
+% Dribbles tackled,season,-0.07
+adjusted_assists_season2,height_in_cm,-0.07
+% Aerial Duels won,days_left_on_contract,0.07
+Take ons attempted,days_left_on_contract,0.07
+% Dribbles tackled,carries final 3rd,0.07
+% Dribbles tackled,Assists,0.07
+% Dribbles tackled,Goals & Assists,0.07
+% Dribbles tackled,Assists p 90,0.07
+% Long passes completed,Times tackled during take-on,-0.07
+Crosses Stopped,Possessions lost,0.07
+Progressive Passes,adjusted_assists_season2,-0.07
+season,transfer_fee,0.07
+minutes_played_season2,season,-0.07
+Tackles attempted,height_in_cm,-0.07
+Interceptions,carries final 3rd,-0.07
+Key passes,height_in_cm,0.07
+Saves %,Total Shots,0.07
+% Shots on target,Saves %,0.07
+Saves %,Shots p 90,0.07
+Goals Against,minutes_played_season2,0.07
+% Successful take-ons,goals_conceded_per_90_season2,-0.07
+Passes Completed,adjusted_assists_season2,0.07
+Crosses Stopped,Tackles attempted,-0.07
+Crosses Stopped,minutes_played_season2,-0.07
+Goal creating actions p 90,adjusted_assists_season2,-0.07
+Goals Against,Progressive Passes,0.07
+% Long passes completed,Errors made,0.07
+Interceptions,days_left_on_contract,0.07
+% Shots on target,Matches Played,0.07
+Matches Played,Shots p 90,0.07
+Matches Played,Total Shots,0.07
+Errors made,carries penalty area,-0.07
+Errors made,days_left_on_contract,0.07
+% Short pass completed,Possessions lost,0.07
+Passes blocked,minutes_played_season2,0.07
+% Aerial Duels won,Pass completion %,0.07
+% Dribbles tackled,goals_conceded_per_90_season2,-0.07
+Shot creating actions p 90,adjusted_clean_sheet_season1,-0.07
+% Dribbles tackled,Goals against p 90,0.07
+Total Shots,adjusted_clean_sheet_season2,-0.07
+% Shots on target,adjusted_clean_sheet_season2,-0.07
+Shots p 90,adjusted_clean_sheet_season2,-0.07
+Shot creating actions p 90,height_in_cm,0.07
+Passes into penalty area,goals_conceded_per_90_season2,0.07
+days_left_on_contract,goals_conceded_per_90_season2,0.07
+Progressive Passes,avg_club_spend_x,0.07
+Progressive Passes,avg_club_spend,0.07
+Progressive Passes,avg_club_spend_y,0.07
+Interceptions,goals_conceded_per_90_season1,-0.07
+Possessions lost,height_in_cm,-0.07
+% Medium passes completed,Crosses Stopped,0.07
+Saves,Shot creating actions p 90,-0.07
+% Shots on target,Passes blocked,-0.07
+Passes blocked,Total Shots,-0.07
+Passes blocked,carries penalty area,-0.07
+Passes blocked,Times tackled during take-on,-0.07
+Passes blocked,Shots p 90,-0.07
+Possessions lost,is_tier1_nation,-0.07
+Goals Against,height_in_cm,-0.07
+% Shots on target,goals_conceded_per_90_season1,0.06
+Total Shots,goals_conceded_per_90_season1,0.06
+Shots p 90,goals_conceded_per_90_season1,0.06
+% Medium passes completed,minutes_played_season2,-0.06
+Take ons attempted,adjusted_assists_season2,0.06
+% Short pass completed,Take ons attempted,-0.06
+Clean Sheets,Tackles attempted,0.06
+% Shots on target,Avg Mins per Match,0.06
+Avg Mins per Match,Total Shots,0.06
+Avg Mins per Match,Shots p 90,0.06
+days_left_on_contract,minutes_played_season2,0.06
+Goals against p 90,Interceptions,-0.06
+% Shots on target,Passes into penalty area,0.06
+Passes into penalty area,Total Shots,0.06
+Passes into penalty area,Shots p 90,0.06
+Progressive passes distance,carries final 3rd,0.06
+Interceptions,adjusted_assists_season2,0.06
+Goal creating actions p 90,Progressive Passes,-0.06
+% Dribbles tackled,Take ons attempted,0.06
+Shot creating actions p 90,is_left_footed,0.06
+Goals against p 90,Possessions lost,0.06
+% Penalty saves,transfer_fee,-0.06
+Key passes,is_left_footed,0.06
+Pass completion %,Times tackled during take-on,-0.06
+Tackles Won,is_left_footed,-0.06
+% Dribbles tackled,Pass completion %,0.06
+Saves,carries penalty area,0.06
+% Long passes completed,Saves,0.06
+Assists p 90,Errors made,0.06
+Errors made,Goals & Assists,0.06
+Assists,Errors made,0.06
+goals_conceded_per_90_season2,is_left_footed,0.06
+adjusted_clean_sheet_season1,carries penalty area,0.06
+% Dribbles tackled,is_left_footed,-0.06
+% Dribbles tackled,Crosses Stopped,-0.06
+Clearances,carries penalty area,-0.06
+% Shots on target,Goals against p 90,0.06
+Goals against p 90,Total Shots,0.06
+Goals against p 90,Shots p 90,0.06
+% Penalty saves,Pass completion %,0.06
+% Short pass completed,minutes_played_season2,-0.06
+Take ons attempted,season,0.06
+1/3,adjusted_assists_season2,0.06
+Possessions lost,carries final 3rd,-0.06
+Goals & Assists,Possessions lost,-0.06
+Assists,Possessions lost,-0.06
+Assists p 90,Possessions lost,-0.06
+Possessions lost,adjusted_assists_season1,-0.06
+% Shots on target,Clean Sheets,0.06
+Clean Sheets,Total Shots,0.06
+Clean Sheets,Shots p 90,0.06
+% Long passes completed,minutes_played_season1,0.06
+Goals against p 90,Tackles Won,0.06
+Avg Mins per Match,is_left_footed,0.06
+age,avg_club_spend_x,-0.06
+age,avg_club_spend,-0.06
+age,avg_club_spend_y,-0.06
+Goals Against,Shot creating actions p 90,-0.06
+% Dribbles tackled,% Penalty saves,0.06
+% Clean sheets,Progressive passes distance,0.06
+Tackles Won,goals_conceded_per_90_season1,0.06
+% Medium passes completed,Passes blocked,0.06
+% Short pass completed,Tackles attempted,0.06
+Errors made,Shot creating actions p 90,0.06
+Passes Attempted,avg_club_spend,-0.06
+Passes Attempted,avg_club_spend_x,-0.06
+Passes Attempted,avg_club_spend_y,-0.06
+Times tackled during take-on,avg_club_spend_y,-0.06
+Times tackled during take-on,avg_club_spend_x,-0.06
+Times tackled during take-on,avg_club_spend,-0.06
+Saves %,adjusted_clean_sheet_season2,0.05
+Tackles Won,adjusted_clean_sheet_season2,0.05
+Matches Played,is_left_footed,0.05
+Errors made,adjusted_assists_season1,0.05
+Matches Played,season,-0.05
+% Penalty saves,Take ons attempted,0.05
+Goals & Assists,carries final 3rd,-0.05
+Assists,carries final 3rd,-0.05
+Assists p 90,carries final 3rd,-0.05
+adjusted_assists_season1,carries final 3rd,-0.05
+carries penalty area,days_left_on_contract,-0.05
+Passes Completed,height_in_cm,-0.05
+Interceptions,Pass completion %,-0.05
+Times tackled during take-on,adjusted_assists_season2,-0.05
+% Shots on target,adjusted_assists_season2,-0.05
+Total Shots,adjusted_assists_season2,-0.05
+adjusted_assists_season2,carries penalty area,-0.05
+Shots p 90,adjusted_assists_season2,-0.05
+adjusted_clean_sheet_season2,height_in_cm,-0.05
+Clearances,transfer_fee,0.05
+Tackles attempted,adjusted_assists_season2,-0.05
+Times tackled during take-on,goals_conceded_per_90_season2,0.05
+Passes Attempted,carries penalty area,0.05
+% Medium passes completed,adjusted_assists_season2,0.05
+age,carries penalty area,-0.05
+Interceptions,goals_conceded_per_90_season2,-0.05
+% Long passes completed,adjusted_assists_season2,-0.05
+Key passes,Passes blocked,0.05
+% Long passes completed,Tackles attempted,0.05
+% Penalty saves,Passes blocked,0.05
+Tackles Won,minutes_played_season2,-0.05
+1/3,goals_conceded_per_90_season2,0.05
+% Short pass completed,Shot creating actions p 90,-0.05
+Interceptions,Possessions lost,-0.05
+minutes_played_season1,season,-0.05
+% Penalty saves,Shot creating actions p 90,-0.05
+% Clean sheets,Key passes,0.05
+Saves,carries final 3rd,0.05
+Clean Sheets,Possessions lost,0.05
+Interceptions,transfer_fee,0.05
+Passes blocked,Progressive Passes,0.05
+% Dribbles tackled,minutes_played_season2,0.05
+% Medium passes completed,Times tackled during take-on,-0.05
+Key passes,carries final 3rd,-0.05
+% Long passes completed,% Penalty saves,0.05
+adjusted_assists_season1,adjusted_clean_sheet_season2,0.05
+% Long passes completed,1/3,-0.05
+Pass completion %,is_left_footed,0.05
+Shots p 90,minutes_played_season2,0.05
+Total Shots,minutes_played_season2,0.05
+% Shots on target,minutes_played_season2,0.05
+% Short pass completed,transfer_fee,-0.05
+% Successful take-ons,Goal creating actions p 90,-0.05
+Interceptions,Key passes,0.05
+Interceptions,season,0.05
+Avg Mins per Match,season,-0.05
+Shot creating actions p 90,Times tackled during take-on,0.05
+Key passes,adjusted_clean_sheet_season2,0.05
+% Dribbles tackled,goals_conceded_per_90_season1,0.05
+is_left_footed,touches_def_pen,0.05
+Saves,Times tackled during take-on,0.05
+Crosses Stopped,Passes into penalty area,0.05
+adjusted_assists_season1,adjusted_assists_season2,-0.04
+% Clean sheets,adjusted_assists_season2,-0.04
+Goal creating actions p 90,is_left_footed,-0.04
+% Dribbles tackled,transfer_fee,0.04
+Goal creating actions p 90,Take ons attempted,-0.04
+Pass completion %,Saves %,-0.04
+Saves %,avg_club_spend_x,-0.04
+Saves %,avg_club_spend,-0.04
+Saves %,avg_club_spend_y,-0.04
+% Shots on target,season,0.04
+Total Shots,season,0.04
+Shots p 90,season,0.04
+Times tackled during take-on,height_in_cm,-0.04
+Passes Attempted,season,0.04
+Goals against p 90,Take ons attempted,-0.04
+Progressive passes distance,Shot creating actions p 90,0.04
+adjusted_clean_sheet_season1,is_tier1_nation,0.04
+% Shots on target,Errors made,0.04
+Errors made,Total Shots,0.04
+Errors made,Times tackled during take-on,0.04
+Errors made,Shots p 90,0.04
+% Aerial Duels won,avg_club_spend,0.04
+% Aerial Duels won,avg_club_spend_x,0.04
+% Aerial Duels won,avg_club_spend_y,0.04
+% Clean sheets,Crosses Stopped,-0.04
+Passes Completed,is_left_footed,0.04
+Progressive passes distance,carries penalty area,0.04
+% Long passes completed,Interceptions,-0.04
+carries final 3rd,goals_conceded_per_90_season2,-0.04
+Passes into penalty area,days_left_on_contract,0.04
+Tackles attempted,is_tier1_nation,-0.04
+Crosses Stopped,Total Shots,0.04
+Crosses Stopped,Shots p 90,0.04
+% Shots on target,Crosses Stopped,0.04
+Possessions lost,carries penalty area,-0.04
+% Shots on target,Possessions lost,-0.04
+Possessions lost,Total Shots,-0.04
+Possessions lost,Shots p 90,-0.04
+% Successful take-ons,Key passes,0.04
+Passes Completed,season,0.04
+Crosses Stopped,Progressive Passes,-0.04
+height_in_cm,minutes_played_season1,-0.04
+Pass completion %,minutes_played_season1,-0.04
+Pass completion %,season,0.04
+Crosses Stopped,Tackles Won,-0.04
+% Dribbles tackled,Possessions lost,0.04
+Goal creating actions p 90,carries penalty area,-0.04
+Passes blocked,is_left_footed,-0.04
+% Medium passes completed,Shot creating actions p 90,0.04
+% Long passes completed,% Short pass completed,0.04
+Clearances,minutes_played_season2,-0.04
+Assists p 90,Total Shots,-0.04
+Assists p 90,Times tackled during take-on,-0.04
+Total Shots,carries final 3rd,-0.04
+Assists,Shots p 90,-0.04
+Times tackled during take-on,carries final 3rd,-0.04
+Shots p 90,carries final 3rd,-0.04
+Goals & Assists,Shots p 90,-0.04
+% Shots on target,Assists,-0.04
+Goals & Assists,carries penalty area,-0.04
+% Shots on target,Assists p 90,-0.04
+Assists,carries penalty area,-0.04
+Assists,Total Shots,-0.04
+% Shots on target,Goals & Assists,-0.04
+Goals & Assists,Total Shots,-0.04
+Goals & Assists,Times tackled during take-on,-0.04
+% Shots on target,carries final 3rd,-0.04
+Assists p 90,carries penalty area,-0.04
+Assists,Times tackled during take-on,-0.04
+Assists p 90,Shots p 90,-0.04
+% Penalty saves,Key passes,-0.04
+Total Shots,adjusted_assists_season1,-0.04
+Times tackled during take-on,adjusted_assists_season1,-0.04
+% Shots on target,adjusted_assists_season1,-0.04
+adjusted_assists_season1,carries penalty area,-0.04
+Shots p 90,adjusted_assists_season1,-0.04
+% Medium passes completed,is_tier1_nation,-0.04
+goals_conceded_per_90_season2,is_tier1_nation,0.04
+% Clean sheets,Possessions lost,-0.04
+% Long passes completed,season,0.04
+Key passes,Pass completion %,-0.04
+Progressive Passes,days_left_on_contract,-0.04
+1/3,is_left_footed,0.04
+Passes into penalty area,is_left_footed,-0.04
+Take ons attempted,minutes_played_season2,-0.03
+Assists,Clean Sheets,-0.03
+Clean Sheets,Goals & Assists,-0.03
+Assists p 90,Clean Sheets,-0.03
+Clean Sheets,adjusted_assists_season1,-0.03
+Passes Attempted,is_tier1_nation,0.03
+Goals & Assists,adjusted_clean_sheet_season1,-0.03
+Assists,adjusted_clean_sheet_season1,-0.03
+Assists p 90,adjusted_clean_sheet_season1,-0.03
+Clearances,Progressive Passes,-0.03
+Passes blocked,height_in_cm,0.03
+carries penalty area,goals_conceded_per_90_season1,-0.03
+% Short pass completed,days_left_on_contract,0.03
+% Penalty saves,Errors made,0.03
+Goal creating actions p 90,carries final 3rd,-0.03
+Goals against p 90,is_left_footed,-0.03
+% Aerial Duels won,goals_conceded_per_90_season1,-0.03
+adjusted_assists_season2,is_tier1_nation,-0.03
+Crosses Stopped,Interceptions,-0.03
+Pass completion %,Tackles Won,0.03
+% Long passes completed,Tackles Won,0.03
+% Penalty saves,season,-0.03
+Possessions lost,Shot creating actions p 90,-0.03
+% Long passes completed,Take ons attempted,-0.03
+Avg Mins per Match,height_in_cm,0.03
+Saves %,age,0.03
+Tackles Won,adjusted_clean_sheet_season1,-0.03
+Goal creating actions p 90,season,0.03
+% Clean sheets,% Medium passes completed,0.03
+Tackles Won,adjusted_assists_season2,-0.03
+Matches Played,height_in_cm,0.03
+goals_conceded_per_90_season1,season,-0.03
+% Successful take-ons,adjusted_clean_sheet_season2,0.03
+% Aerial Duels won,Times tackled during take-on,-0.03
+Pass completion %,age,0.03
+Times tackled during take-on,days_left_on_contract,0.03
+Errors made,season,0.03
+% Shots on target,days_left_on_contract,0.03
+Total Shots,days_left_on_contract,0.03
+Shots p 90,days_left_on_contract,0.03
+% Short pass completed,% Successful take-ons,0.03
+Interceptions,carries penalty area,0.03
+% Successful take-ons,Crosses Stopped,-0.03
+Pass completion %,adjusted_clean_sheet_season2,-0.03
+Pass completion %,goals_conceded_per_90_season1,0.03
+Goal creating actions p 90,Passes blocked,-0.03
+avg_club_spend_y,goals_conceded_per_90_season2,-0.03
+avg_club_spend_x,goals_conceded_per_90_season2,-0.03
+avg_club_spend,goals_conceded_per_90_season2,-0.03
+Tackles attempted,goals_conceded_per_90_season1,0.03
+Pass completion %,days_left_on_contract,-0.03
+1/3,Times tackled during take-on,-0.03
+Goals against p 90,age,0.03
+% Long passes completed,Goals Against,0.03
+Shots p 90,carries penalty area,-0.03
+Total Shots,carries penalty area,-0.03
+Times tackled during take-on,carries penalty area,-0.03
+% Shots on target,carries penalty area,-0.03
+% Shots on target,Times tackled during take-on,-0.03
+Shots p 90,Times tackled during take-on,-0.03
+Times tackled during take-on,Total Shots,-0.03
+Crosses Stopped,Key passes,-0.03
+Tackles attempted,is_left_footed,-0.03
+% Short pass completed,is_left_footed,0.03
+Possessions lost,transfer_fee,-0.03
+% Long passes completed,transfer_fee,0.03
+Passes into penalty area,Tackles attempted,-0.03
+Passes into penalty area,minutes_played_season2,0.03
+Clean Sheets,Pass completion %,0.02
+% Short pass completed,Passes blocked,0.02
+adjusted_clean_sheet_season1,is_left_footed,0.02
+% Aerial Duels won,season,0.02
+Progressive Passes,goals_conceded_per_90_season2,0.02
+% Long passes completed,Avg Mins per Match,0.02
+adjusted_clean_sheet_season1,height_in_cm,0.02
+Goals against p 90,carries penalty area,-0.02
+Matches Played,adjusted_assists_season2,0.02
+Total Shots,minutes_played_season1,0.02
+Shots p 90,minutes_played_season1,0.02
+% Shots on target,minutes_played_season1,0.02
+% Clean sheets,season,-0.02
+% Long passes completed,Shot creating actions p 90,0.02
+% Long passes completed,Matches Played,0.02
+Saves,height_in_cm,-0.02
+% Dribbles tackled,Clean Sheets,0.02
+Progressive passes distance,season,-0.02
+Tackles attempted,adjusted_clean_sheet_season1,-0.02
+Passes blocked,Tackles attempted,-0.02
+Clearances,Crosses Stopped,-0.02
+% Shots on target,adjusted_clean_sheet_season1,0.02
+Shots p 90,adjusted_clean_sheet_season1,0.02
+Total Shots,adjusted_clean_sheet_season1,0.02
+Crosses Stopped,goals_conceded_per_90_season2,0.02
+Assists,Saves %,-0.02
+Goals & Assists,Saves %,-0.02
+Assists p 90,Saves %,-0.02
+1/3,adjusted_assists_season1,0.02
+% Clean sheets,carries penalty area,0.02
+Saves %,adjusted_assists_season1,-0.02
+Avg Mins per Match,adjusted_assists_season2,0.02
+adjusted_assists_season1,is_tier1_nation,0.02
+season,touches_def_pen,-0.02
+Crosses Stopped,carries final 3rd,0.02
+1/3,Progressive Passes,-0.02
+Shot creating actions p 90,touches_def_pen,-0.02
+% Aerial Duels won,Shot creating actions p 90,0.02
+% Medium passes completed,carries penalty area,-0.02
+% Short pass completed,season,-0.02
+% Dribbles tackled,Passes into penalty area,-0.02
+1/3,Assists p 90,0.02
+1/3,Goals & Assists,0.02
+1/3,Assists,0.02
+% Penalty saves,Times tackled during take-on,0.02
+% Dribbles tackled,Passes blocked,-0.02
+Progressive Passes,minutes_played_season2,0.02
+Errors made,carries final 3rd,-0.02
+carries final 3rd,days_left_on_contract,-0.02
+Clearances,goals_conceded_per_90_season1,-0.02
+% Medium passes completed,Progressive Passes,-0.02
+Clearances,Total Shots,-0.02
+% Shots on target,Clearances,-0.02
+Clearances,Shots p 90,-0.02
+Goals Against,season,-0.02
+% Penalty saves,Tackles Won,0.02
+% Clean sheets,% Shots on target,0.02
+% Clean sheets,Shots p 90,0.02
+% Clean sheets,Total Shots,0.02
+% Medium passes completed,goals_conceded_per_90_season2,-0.02
+Take ons attempted,adjusted_clean_sheet_season2,-0.02
+% Short pass completed,is_tier1_nation,-0.02
+goals_conceded_per_90_season2,season,-0.02
+Shot creating actions p 90,adjusted_assists_season2,0.02
+carries penalty area,goals_conceded_per_90_season2,-0.02
+height_in_cm,touches_def_pen,0.02
+Passes blocked,Tackles Won,0.02
+% Long passes completed,Passes into penalty area,0.02
+Possessions lost,Saves %,0.02
+Passes into penalty area,Tackles Won,-0.02
+% Short pass completed,Passes Completed,-0.02
+Key passes,minutes_played_season2,0.02
+avg_club_spend,carries final 3rd,-0.02
+avg_club_spend_y,carries final 3rd,-0.02
+avg_club_spend_x,carries final 3rd,-0.02
+is_tier1_nation,transfer_fee,0.01
+adjusted_clean_sheet_season1,season,-0.01
+adjusted_assists_season2,days_left_on_contract,-0.01
+Progressive Passes,adjusted_clean_sheet_season2,-0.01
+Pass completion %,adjusted_assists_season2,0.01
+Errors made,is_left_footed,-0.01
+% Medium passes completed,Tackles Won,-0.01
+Crosses Stopped,Errors made,-0.01
+Saves %,is_tier1_nation,0.01
+height_in_cm,season,0.01
+Passes Attempted,is_left_footed,0.01
+Goals against p 90,adjusted_assists_season2,0.01
+Clearances,Shot creating actions p 90,-0.01
+Pass completion %,touches_def_pen,-0.01
+Assists p 90,Goal creating actions p 90,-0.01
+Goal creating actions p 90,Goals & Assists,-0.01
+Assists,Goal creating actions p 90,-0.01
+Goal creating actions p 90,adjusted_assists_season1,-0.01
+Crosses Stopped,carries penalty area,0.01
+Passes into penalty area,Possessions lost,-0.01
+Key passes,adjusted_assists_season2,0.01
+% Dribbles tackled,adjusted_clean_sheet_season1,-0.01
+Tackles Won,carries final 3rd,-0.01
+Passes Completed,avg_club_spend,0.01
+Passes Completed,avg_club_spend_y,0.01
+Passes Completed,avg_club_spend_x,0.01
+Tackles attempted,carries penalty area,0.01
+Tackles attempted,Times tackled during take-on,0.01
+avg_club_spend,carries penalty area,0.01
+avg_club_spend_x,carries penalty area,0.01
+avg_club_spend_y,carries penalty area,0.01
+Pass completion %,adjusted_assists_season1,-0.01
+% Clean sheets,Saves,0.01
+% Successful take-ons,is_left_footed,-0.01
+adjusted_assists_season2,season,-0.01
+Errors made,goals_conceded_per_90_season1,-0.01
+Clean Sheets,season,0.01
+% Penalty saves,is_tier1_nation,0.01
+% Long passes completed,Shots p 90,-0.01
+% Long passes completed,% Shots on target,-0.01
+% Long passes completed,Total Shots,-0.01
+Passes Attempted,Shot creating actions p 90,-0.01
+1/3,avg_club_spend,0.01
+1/3,avg_club_spend_x,0.01
+1/3,avg_club_spend_y,0.01
+Pass completion %,Tackles attempted,-0.01
+% Long passes completed,% Successful take-ons,0.01
+Clean Sheets,goals_conceded_per_90_season2,0.01
+height_in_cm,is_left_footed,-0.01
+Interceptions,age,-0.01
+Goal creating actions p 90,Times tackled during take-on,-0.01
+Goal creating actions p 90,Shots p 90,-0.01
+Goal creating actions p 90,Total Shots,-0.01
+% Shots on target,Goal creating actions p 90,-0.01
+Goals against p 90,minutes_played_season2,-0.01
+% Short pass completed,adjusted_assists_season2,0.01
+Goals Against,carries final 3rd,-0.01
+Errors made,height_in_cm,0.01
+Goals Against,Goals against p 90,0.01
+Clean Sheets,avg_club_spend,-0.01
+Clean Sheets,avg_club_spend_x,-0.01
+Clean Sheets,avg_club_spend_y,-0.01
+% Dribbles tackled,% Medium passes completed,-0.01
+Shot creating actions p 90,age,0.01
+Passes Completed,Shot creating actions p 90,0.01
+Goals against p 90,Tackles attempted,0.01
+Interceptions,Progressive Passes,0.01
+age,season,0.01
+% Aerial Duels won,% Clean sheets,-0.01
+Shot creating actions p 90,transfer_fee,0.01
+% Successful take-ons,days_left_on_contract,0.01
+Passes blocked,adjusted_clean_sheet_season2,0.0
+Progressive Passes,Shot creating actions p 90,-0.0
+Clearances,adjusted_clean_sheet_season2,0.0
+Tackles Won,height_in_cm,0.0
+% Clean sheets,avg_club_spend,0.0
+% Clean sheets,avg_club_spend_y,0.0
+% Clean sheets,avg_club_spend_x,0.0
+Key passes,goals_conceded_per_90_season2,-0.0
+Crosses Stopped,adjusted_clean_sheet_season1,0.0
+Possessions lost,adjusted_clean_sheet_season1,-0.0
+Tackles attempted,transfer_fee,-0.0
+% Short pass completed,Shots p 90,0.0
+% Short pass completed,% Shots on target,0.0
+% Short pass completed,Total Shots,0.0
+% Successful take-ons,adjusted_assists_season2,-0.0
+Assists p 90,Pass completion %,-0.0
+Goals & Assists,Pass completion %,-0.0
+Assists,Pass completion %,-0.0
+Clean Sheets,Crosses Stopped,0.0
+% Successful take-ons,minutes_played_season2,0.0
+Goal creating actions p 90,goals_conceded_per_90_season2,0.0
+% Successful take-ons,Pass completion %,-0.0
+% Successful take-ons,Shot creating actions p 90,0.0
+% Dribbles tackled,is_tier1_nation,0.0
+Tackles attempted,adjusted_clean_sheet_season2,-0.0
+% Short pass completed,Tackles Won,0.0
+Interceptions,Take ons attempted,0.0
+carries final 3rd,height_in_cm,0.0
+1/3,Crosses Stopped,0.0
+Passes into penalty area,avg_club_spend,0.0
+Passes into penalty area,avg_club_spend_x,0.0
+Passes into penalty area,avg_club_spend_y,0.0
+Passes Attempted,height_in_cm,-0.0
+carries penalty area,height_in_cm,0.0
+Take ons attempted,goals_conceded_per_90_season1,0.0
+Progressive passes distance,height_in_cm,-0.0
+Goal creating actions p 90,Possessions lost,0.0
+% Long passes completed,avg_club_spend_y,-0.0
+% Long passes completed,avg_club_spend_x,-0.0
+% Long passes completed,avg_club_spend,-0.0
+goals_conceded_per_90_season1,is_tier1_nation,0.0
+Pass completion %,goals_conceded_per_90_season2,0.0
+Pass completion %,Passes Attempted,-0.0
+Assists p 90,age,-0.0
+Assists,age,-0.0
+Goals & Assists,age,-0.0
+% Shots on target,age,-0.0
+Shots p 90,age,-0.0
+Total Shots,age,-0.0
