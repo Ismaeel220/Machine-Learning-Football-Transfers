@@ -16,8 +16,8 @@ testing_seasons = [2024]
 #all seasons from which data will be used
 all_seasons = training_seasons + testing_seasons
 
-#will be using data from the top 4 european leagues
-target_leagues = ['GB1', 'IT1', 'ES1', 'L1'] 
+#will be using data from the top 5 european leagues
+target_leagues = ['GB1', 'IT1', 'ES1', 'L1','FR1'] 
 
 # Global Football Rankings (Top 76)  used to weigh goals and assists
 league_coeffecients = {
@@ -219,6 +219,11 @@ perf_cols = [
 ]
 all_data[perf_cols] = all_data[perf_cols].fillna(0)
 
+# Merge the clubs dataset to find the domestic_competition_id of the club they are transferring FROM
+all_data = pd.merge(all_data, clubs[['club_id', 'domestic_competition_id']], left_on='from_club_id', right_on='club_id', how='left')
+
+# get coefficient from dictionary
+all_data['player_coefficient'] = all_data['domestic_competition_id'].map(league_coeffecients).fillna(default_coefficient)
 
 #define list of final features that will be used for he dataset
 final_cols = [
@@ -226,7 +231,8 @@ final_cols = [
     'age', 'position', 'height_in_cm', 'is_left_footed', 'is_tier1_nation',
     'adjusted_goals_season1', 'adjusted_assists_season1', 'adjusted_clean_sheet_season1', 'goals_conceded_per_90_season1', 'minutes_played_season1',
     'adjusted_goals_season2', 'adjusted_assists_season2', 'adjusted_clean_sheet_season2', 'goals_conceded_per_90_season2', 'minutes_played_season2',
-    'season', 'to_club_name'
+    'season', 'to_club_name',
+   'player_coefficient'
 ]
 
 
@@ -274,7 +280,16 @@ full_scouting_df.rename(columns={'player': 'name'}, inplace=True)
 full_scouting_df['season'] = full_scouting_df['season'].astype(str).str.split('-').str[-1].astype(int)
 
 #remove data from fbref that is not required since we already have it from the previous dataset
-full_scouting_df = full_scouting_df.drop(columns=[c for c in ['rk', 'nation', 'pos', 'squad', 'comp', 'age', 'born'] if c in full_scouting_df.columns])
+# --- HYBRID APPROACH: Remove redundant stats and admin data from FBref ---
+# We drop these because Transfermarkt already provides our weighted basic metrics.
+# FBref will be used strictly for advanced underlying tracking data.
+columns_to_drop = [
+   'Goals', 'Assists',  
+    'Goals Against', 'Goals against p 90', 'Clean Sheets', '% Clean sheets',
+    'rk', 'nation', 'pos', 'squad', 'comp', 'age', 'born'
+]
+
+full_scouting_df = full_scouting_df.drop(columns=[c for c in columns_to_drop if c in full_scouting_df.columns])
 stats_to_keep = [col for col in full_scouting_df.columns if col not in ['name', 'season']]
 
 
@@ -285,8 +300,14 @@ print("Combining data...")
 
 #combine transfer market and fbref data
 transfer_dataset = pd.merge(all_data, full_scouting_df, on=['name', 'season'], how='left')
-transfer_dataset['has_advanced_stats'] = transfer_dataset['Expected Goals'].notna().astype(int)
+# Get a list of just the FBref statistical columns
+fbref_stats_to_adjust = [col for col in full_scouting_df.columns if col not in ['name', 'season']]
 
+# Loop through them and multiply by the player_coefficient
+for col in fbref_stats_to_adjust:
+    transfer_dataset[col] = pd.to_numeric(transfer_dataset[col], errors='coerce') * transfer_dataset['player_coefficient']
+transfer_dataset['has_advanced_stats'] = transfer_dataset['Expected Goals'].notna().astype(int)
+transfer_dataset = transfer_dataset.drop(columns=['player_coefficient'])
 
 # destination folder path
 output_dir = Path.cwd() /"training-testing-data"
