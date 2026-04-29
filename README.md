@@ -35,12 +35,12 @@ Data is split chronologically: transfers from **2020–2023 for training** and *
 A major limitation of existing research is treating the observed transfer fee as an absolute ground truth, ignoring market inflation. To address this, model training was conducted in two distinct phases:
 
 * **Phase 1 (Intrinsic Value):** Models were trained exclusively on intrinsic player data (performance metrics, age, contract length) to establish a baseline of what a player is theoretically worth based on their sporting output.
-* **Phase 2 (Contextual Value):** The best-performing baseline models were retrained with the addition of the contextual "wealth tax" feature to determine how much of the final fee is dictated by the buying club's financial status rather than the player's ability.
+* **Phase 2 (Contextual Value):** The best performing baseline models were retrained with the addition of the contextual "wealth tax" feature to determine how much of the final fee is dictated by the buying club's financial status rather than the player's ability.
 
 ## Modeling & Evaluation
 Three machine learning models were evaluated across the dataset variations: **Multiple Linear Regression**, **Random Forest**, and **CatBoost**. 
 
-The training scripts can be found in the `training-scripts` folder. Evaluation goes beyond standard error metrics (RMSE, MAE) by utilizing **SHAP (SHapley Additive exPlanations) diagrams** to verify that the models learned logical, real-world football characteristics (e.g., verifying that longer contracts and higher goal contributions positively impact intrinsic value).
+The training scripts can be found in the `training scripts` folder. Evaluation goes beyond standard error metrics (RMSE, MAE) by utilizing **SHAP (SHapley Additive exPlanations) diagrams** to verify that the models learned logical, real-world football characteristics (e.g., verifying that longer contracts and higher goal contributions positively impact intrinsic value).
 
 ## Key Findings
 * **Tree Based models are most accurate:** Ensemble methods (specifically CatBoost and Random Forest) proved highly capable of modeling non linear intrinsic value without the need for strict dimensionality reduction like PCA.
