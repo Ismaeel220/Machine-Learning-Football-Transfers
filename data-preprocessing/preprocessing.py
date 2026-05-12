@@ -18,47 +18,63 @@ test_df = df[df['season'] == 2024].copy()
 # 1. RAW DATA GENERATION
 # =========================================================================
 
-# FILTER OUT GOALKEEPERS
+# FILTER OUT GOALKEEPERS AND REMOVE
 train_df = train_df[train_df['position'] != 'Goalkeeper'].copy()
 test_df = test_df[test_df['position'] != 'Goalkeeper'].copy()
 
-# EXPLICITLY DROP GOALKEEPER COLUMNS
+# DROP GOALKEEPER COLUMNS
 gk_cols_to_drop = ['% Penalty saves', 'Crosses Stopped', 'Saves', 'Saves %', 'Clean Sheets', '% Clean sheets']
 train_df = train_df.drop(columns=gk_cols_to_drop, errors='ignore')
 test_df = test_df.drop(columns=gk_cols_to_drop, errors='ignore')
 
 # method to take averages for each position for each stat
 def impute_combined_averages(train_data, test_data):
+    #create a list of all columns with numerical values
     numeric_cols = train_data.select_dtypes(include=[np.number]).columns
-    
+    #loops through training data and finds each unique position
     for pos in train_data['position'].unique():
+        #for each position the mean of every numeric column is calculated
         pos_means = train_data[train_data['position'] == pos][numeric_cols].mean()
+
+        #use boolean masking to create a true false list classifying players by position
         train_loc = train_data['position'] == pos
         test_loc = test_data['position'] == pos
         
+        #.loc used indexed assigment to go through the list created and assign posiitonal averages to each mssing data column for each positon
         train_data.loc[train_loc, numeric_cols] = train_data.loc[train_loc, numeric_cols].fillna(pos_means)
         test_data.loc[test_loc, numeric_cols] = test_data.loc[test_loc, numeric_cols].fillna(pos_means)
-            
+
+    #incase any missing values are missed replace these with 0 to avoid the model crashing        
     train_data[numeric_cols] = train_data[numeric_cols].fillna(0)
     test_data[numeric_cols] = test_data[numeric_cols].fillna(0)
+    #return imputed data 
     return train_data, test_data
 
+#overwrite old data frames with the imputed ones
 train_df, test_df = impute_combined_averages(train_df, test_df)
 
-# 4. One-Hot Encode Player Positions
+# 4. One Hot Encode Player Positions
 train_df = pd.get_dummies(train_df, columns=['position'], drop_first=False)
 test_df = pd.get_dummies(test_df, columns=['position'], drop_first=False)
 train_df, test_df = train_df.align(test_df, join='left', axis=1, fill_value=0)
 
-# APPLY LOG TRANSFORMATION AND FEATURE ENGINEERING TO RAW DATA
+# create a new column with the log transfer fee in the dataset
 train_df['transfer_fee_log'] = np.log1p(train_df['transfer_fee'])
 test_df['transfer_fee_log'] = np.log1p(test_df['transfer_fee'])
 
+#create a new column called age squared 
 train_df['age_squared'] = train_df['age'] ** 2
 test_df['age_squared'] = test_df['age'] ** 2
 
+#calculate the wealth tax feature by using leave one out encoding replacing the name of the club the player transferred to 
+#with average spend of that club accross the training dataset
 loo_encoder = LeaveOneOutEncoder(cols=['to_club_name'])
+#fit transform only on training data 
+#calculated from training data and these calculations are applied to both training and tetsing data 
 train_df['to_club_name_encoded'] = loo_encoder.fit_transform(train_df['to_club_name'], train_df['transfer_fee_log'])
+#applies the learned caluclations to testing data
+#  in tetsing data club recieves the average for club from training data  
+# any missing clubs get the global average 
 test_df['to_club_name_encoded'] = loo_encoder.transform(test_df['to_club_name'])
 
 # define target folder
@@ -69,21 +85,25 @@ os.makedirs(save_dir, exist_ok=True)
 train_df.to_csv(save_dir / 'raw_train.csv', index=False)
 test_df.to_csv(save_dir / 'raw_test.csv', index=False)
 
-print("Raw train and test datasets generated (including age_squared and to_club_name_encoded)")
+print("Raw train and test datasets generated ")
+#number of features and players in each dataset
+print(f"Training Data: {train_df.shape[0]} players, {train_df.shape[1]} features")
+print(f"Testing Data: {test_df.shape[0]} players, {test_df.shape[1]} features")
 
-# Keep copies of the clean raw data to branch off for EDA and PCA
+# Keep copies of the clean raw data to branch off for correlation and PCA
 raw_train_df = train_df.copy()
 raw_test_df = test_df.copy()
 
 # =========================================================================
 # 2. EDA DATASET GENERATION (Branched from Raw)
 # =========================================================================
-print("\nGenerating EDA Dataset...")
+print("\nGenerating correlation Dataset...")
 
+#make a copy of raw dataset to avoid directky editing the raw data 
 eda_train_df = raw_train_df.copy()
 eda_test_df = raw_test_df.copy()
 
-# Define all characteristics that must survive EDA filtering
+# Define all characteristics that are not highly correlated and should not be accidentally removed
 protected_features = [
     'name', 'to_club_name', 'season', 'transfer_fee', 'transfer_fee_log', 'to_club_name_encoded',
     'age', 'age_squared', 'days_left_on_contract', 'has_advanced_stats',
@@ -91,58 +111,72 @@ protected_features = [
     'position_Attack', 'position_Defender', 'position_Midfield'
 ]
 
+#caluclate the correlation between each feature and the target
 target_corrs = eda_train_df.select_dtypes(include=[np.number]).corr()['transfer_fee_log'].abs()
 
 # ---------------------------------------------------------
-# A. Drop mostly empty columns (Safeguarding protected features)
+# Drop mostly empty columns redundant carry no infomation 
+#columns which are 99 percent blank
 # ---------------------------------------------------------
 threshold = 0.99
 numeric_cols = eda_train_df.select_dtypes(include=[np.number]).columns
+#empty list to keep track of columns removed 
 cols_to_drop_empty = []
 
+#loop through each column if protected skip it 
 for col in numeric_cols:
     if col in protected_features:
         continue
+    # check each non protected column if the number of null or
+    #  o stats is greater than 99 percent then remove it and add to list to drop
     percentage_empty = (eda_train_df[col].isna() | (eda_train_df[col] == 0)).mean()
     if percentage_empty >= threshold:
         cols_to_drop_empty.append(col)
 
+#drop the empty columns 
 eda_train_df = eda_train_df.drop(columns=cols_to_drop_empty, errors='ignore')
+#make sure the number of columns in test dataset is equal to training i.e chnages are mirrored
 eda_test_df = eda_test_df[eda_train_df.columns]
 
 # ---------------------------------------------------------
-# B. Drop redundant correlated columns (Safeguarding protected features)
+# Drop correlated features 
 # ---------------------------------------------------------
 import pandas as pd
 import numpy as np
 
-# 1. Create the Correlation Matrix and isolate the Upper Triangle
+# Create the Correlation Matrix comparing each feature to other feauture 
+#   isolate the Upper Triangle too avoid checking each pair of features twice 
+# as a correlation matrix is symmetrical
 corr_matrix = eda_train_df.select_dtypes(include=[np.number]).corr().abs()
 upper = corr_matrix.where(np.triu(np.ones(corr_matrix.shape), k=1).astype(bool))
 
+# Track the exact comparisons set too avoid duplicates
 dropped_corr = set()
-drop_log = [] # Track the exact comparisons
+drop_log = [] 
 
-# 2. Iterate and apply feature selection logic
+# outer loop Iterate through features
 for col in upper.columns:
-    # Skip if the base column is protected
+    # Skip if the  column is protected
     if col in protected_features:
         continue 
-        
+
+    #set correlation threshold to 90 percent    
+    # inner loop any row with over 90 percent correlation to outer loop is saved to a list 
     high_corr_features = upper.index[upper[col] >= 0.90].tolist()
+    
     for f in high_corr_features:
-        # Skip if the correlated counterpart is protected
+        # Skip if the correlated feature is protected
         if f in protected_features:
             continue 
             
-        # Skip if either feature has already been processed and dropped
+        # Skip if either feature has already been processed and dropped skip it 
         if col in dropped_corr or f in dropped_corr:
             continue
             
-        # Get target correlations for the tie-breaker
+        # compare each feature that is highly correlated and determine correlation to the target 
         tc1, tc2 = target_corrs.get(col, 0), target_corrs.get(f, 0)
         
-        # Determine winner and loser explicitly based on target correlation
+        #  feature with greater correlation to the target is kept and the feature with lower correlation is dropped 
         if tc2 >= tc1:
             drop_feature, kept_feature = col, f
             drop_tc, keep_tc = tc1, tc2
@@ -152,7 +186,7 @@ for col in upper.columns:
             
         dropped_corr.add(drop_feature)
         
-        # Record the exact comparison for the report
+        # Record the exact calculations for clarity
         drop_log.append({
             'Dropped Feature': drop_feature,
             'Kept Feature': kept_feature,
@@ -161,17 +195,17 @@ for col in upper.columns:
             'Kept Target Corr': round(keep_tc, 4)
         })
 
-# 3. Execute the drops
+#  Execute the drops
 outfield_drops = list(dropped_corr)
 eda_train_df = eda_train_df.drop(columns=outfield_drops, errors='ignore')
 eda_test_df = eda_test_df.drop(columns=outfield_drops, errors='ignore')
 
-# 4. Save EDA Data
+#  Save correlation Data
 eda_train_df.to_csv(save_dir / 'eda_train.csv', index=False)
 eda_test_df.to_csv(save_dir / 'eda_test.csv', index=False)
 
-# 5. Output Summary & Reports
-print("EDA Datasets Generated!\n")
+# print  Summary & Reports
+print("correlation Datasets Generated\n")
 
 print(f"--- Dropped {len(cols_to_drop_empty)} Mostly Empty Stats ---")
 print(cols_to_drop_empty)
@@ -179,10 +213,10 @@ print("\n")
 
 print(f"--- Dropped {len(outfield_drops)} Highly Correlated Stats ---")
 if drop_log:
-    # Convert the log to a DataFrame for a clean, tabular printout
+    # Convert the log to a DataFrame for a clean printout
     report_df = pd.DataFrame(drop_log)
     
-    # Sort by the highest inter-feature correlation to see the worst offenders first
+    # Sort by the highest inter-feature correlation 
     report_df = report_df.sort_values(by='Inter-Feature Corr', ascending=False).reset_index(drop=True)
     
     # Print the DataFrame 
@@ -200,21 +234,23 @@ print("\nGenerating PCA Dataset from RAW Data...")
 pca_train_df = raw_train_df.copy()
 pca_test_df = raw_test_df.copy()
 
-# Define columns that should not be fed into PCA
+# isolate columns that should not be dropped 
 protected_cols_pca = [
     'name', 'to_club_name', 'season', 'transfer_fee', 'transfer_fee_log', 'to_club_name_encoded',
     'age', 'age_squared', 'days_left_on_contract', 'has_advanced_stats',
     'height_in_cm', 'is_left_footed', 'is_tier1_nation',
     'position_Attack', 'position_Defender', 'position_Midfield'
 ]
-# ROBUST SCALING
+# robust sclaing as pca is linear so requires scaling 
 def scale_features(train_data, test_data):
+    #ignore protected features and boolean features that do not need scaling 
     non_scale_cols = protected_cols_pca
     bool_cols = train_data.select_dtypes(include=['bool']).columns.tolist()
-    
+    #skip binary columns that do not need scaling 
     cols_to_scale = [c for c in train_data.select_dtypes(include=[np.number]).columns 
                      if c not in non_scale_cols + bool_cols and train_data[c].nunique() > 2]
     
+    #apply scaling to data train on training data and apply to testing 
     scaler = RobustScaler()
     train_data[cols_to_scale] = scaler.fit_transform(train_data[cols_to_scale])
     test_data[cols_to_scale] = scaler.transform(test_data[cols_to_scale])
@@ -233,12 +269,12 @@ feature_cols = [c for c in pca_train_df.columns if c not in protected_cols_pca a
 X_train = pca_train_df[feature_cols].reset_index(drop=True)
 X_test = pca_test_df[feature_cols].reset_index(drop=True)
 
-# Fit PCA
+# Fit PCA keep 95 percent of variance within data  apply pca to only non protected variables 
 pca = PCA(n_components=0.95, random_state=42)
 train_pcs = pca.fit_transform(X_train)
 test_pcs = pca.transform(X_test)
 
-# Reassemble Dataframes
+# Reassemble Dataframes add back portected columns 
 pc_columns = [f"PC{i+1}" for i in range(train_pcs.shape[1])]
 train_pca_df = pd.DataFrame(train_pcs, columns=pc_columns)
 test_pca_df = pd.DataFrame(test_pcs, columns=pc_columns)
